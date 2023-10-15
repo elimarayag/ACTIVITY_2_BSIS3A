@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><img src="./assets/kemelogo.png" alt="logo"></div>
+        <ul class="nav-links">
+            <li><a href="#pop">Pop</a></li>
+            <li><a href="#rnb">R&B</a></li>
+            <li><a href="#rock">Rock</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><img src="./assets/kemelogo.png" alt="logo"></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#pop">Pop</a></li>
+                <li><a href="#rnb">R&B</a></li>
+                <li><a href="#rock">Rock</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="genre">
+        <div class="genre-container">
+            <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
+            <div class="genre-slides">
+                <div class="genre-slide">
+                    <img src="./assets/pop.jpg" alt="pop">
+                </div>
+                <div class="genre-slide">
+                    <img src="./assets/r&b.jpg" alt="r&b">
+                </div>
+                <div class="genre-slide">
+                    <img src="./assets/rock.jpg" alt="rock">
+                </div>
+            </div>
+            <button class="arrow next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="homepage-content">
+        <h1>Welcome!</h1>
+        <p>Explore your favorite genres and get to know more about your favorite artists!</p>
+    </section>
+      <script src="script.js"></script>
+</body>
+</html>

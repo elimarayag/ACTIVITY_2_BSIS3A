@@ -1,0 +1,30 @@
+/* mediaqueries.css */
+@media screen and (max-width: 1400px) {
+    #genre {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #genre {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #genre {
+        width: 100%;
+    }
+
+    .arrow {
+        font-size: 1.5rem;
+    }
+
+    #desktop-nav {
+        display: none; /* Hide the desktop navigation */
+    }
+
+    #hamburger-nav {
+        display: block; /* Show the hamburger menu */
+    }
+}
