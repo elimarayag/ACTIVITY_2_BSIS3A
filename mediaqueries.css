@@ -1,9 +1,13 @@
 /* mediaqueries.css */
 @media screen and (max-width: 1400px) {
+    
     #genre {
         width: 90%;
+        max-width: none; 
+        display: flex;
+        justify-content: center;
     }
-}
+    }
 
 @media screen and (max-width: 1200px) {
     #genre {
