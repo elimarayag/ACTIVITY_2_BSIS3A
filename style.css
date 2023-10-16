@@ -7,6 +7,7 @@ body {
     padding: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -207,4 +208,21 @@ a:hover {
     text-align: center;
     color: rgb(249, 199, 79)
 }
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Section */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
 

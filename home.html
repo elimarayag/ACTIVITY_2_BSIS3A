@@ -11,9 +11,9 @@
     <nav id="desktop-nav">
         <div class="logo"><img src="./assets/kemelogo.png" alt="logo"></div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home-section">Home</a></li>
             <li><a href="#genre">Genre</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about-content">About</a></li>
         </ul>
     </nav>
     <nav id="hamburger-nav">
@@ -25,9 +25,9 @@
                 <span></span>
             </div>
             <ul class="menu-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#genre">Genre</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#genre" onclick="toggleMenu()">Genre</a></li>
+                <li><a href="#about-content" onclick="toggleMenu()">About</a></li>
             </ul>
         </div>
     </nav>
@@ -54,9 +54,25 @@
         </div>
     </section>
     <section id="about-content">
+        <h1 class="title">About</h1>
         <h1>Welcome!</h1>
         <p>Explore your favorite genres and get to know more about your favorite artists!</p>
+        <div class="about-image">
+            <img src="./assets/keme.jpg" alt="About Photo">
+        </div>
     </section>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
+              <li><a href="#genre" onclick="toggleMenu()">Genre</a></li>
+              <li><a href="#about-content" onclick="toggleMenu()">About</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023. All Rights Reserved.</p>
+      </footer>
       <script src="script.js"></script>
 </body>
 </html>
