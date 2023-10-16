@@ -145,7 +145,16 @@ a:hover {
   transform: none;
 }
 
-/* section */
+/*section about*/
+#home-section {
+    background-image: url('./assets/bg.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0; 
+}
+
+/* section genre*/
 #genre {
     margin: 150px auto;
     overflow: hidden;
@@ -166,6 +175,11 @@ a:hover {
     flex: 0 0 100%;
     max-width: 100%;
 }
+
+.genre-slide img {
+    width: 90%;
+    height: 70%; 
+    }
 
 .arrow {
     cursor: pointer;
@@ -188,7 +202,7 @@ a:hover {
     right: 0;
 }
 
-#homepage-content {
+#about-content {
     padding: 100px;
     text-align: center;
     color: rgb(249, 199, 79)

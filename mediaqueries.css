@@ -1,6 +1,6 @@
 /* mediaqueries.css */
 @media screen and (max-width: 1400px) {
-    
+
     #genre {
         width: 90%;
         max-width: none; 
@@ -16,6 +16,7 @@
 }
 
 @media screen and (max-width: 600px) {
+
     #genre {
         width: 100%;
     }
