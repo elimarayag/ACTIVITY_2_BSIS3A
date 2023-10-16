@@ -153,13 +153,15 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     padding: 100px 0; 
+    margin: 0;
 }
 
 /* section genre*/
 #genre {
-    margin: 150px auto;
+    margin: 50px auto;
     overflow: hidden;
     position: relative; 
+    margin-bottom: 0;
 }
 
 .genre-container {
@@ -185,7 +187,7 @@ a:hover {
 .arrow {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%);
     font-size: 2rem;
     background: rgba(0, 0, 0, 0.3);
@@ -204,7 +206,7 @@ a:hover {
 }
 
 #about-content {
-    padding: 100px;
+    padding: 50px;
     text-align: center;
     color: rgb(249, 199, 79)
 }

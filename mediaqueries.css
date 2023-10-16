@@ -10,12 +10,29 @@
     }
 
 @media screen and (max-width: 1200px) {
+
+    #home-section {
+        background-size: cover;
+    }
+
     #genre {
         width: 95%;
+    }
+
+    #hamburger-nav {
+        text-align: right;
+    }
+    .menu-links {
+        left: auto;
+        right: 0;
     }
 }
 
 @media screen and (max-width: 600px) {
+
+    #home-section {
+        background-size: contain;
+    }
 
     #genre {
         width: 100%;
@@ -26,10 +43,16 @@
     }
 
     #desktop-nav {
-        display: none; /* Hide the desktop navigation */
+        display: none; 
     }
 
     #hamburger-nav {
-        display: block; /* Show the hamburger menu */
+        display: block; 
+        text-align: right;
+    }
+
+    .menu-links {
+        left: auto;
+        right: 0;
     }
 }
