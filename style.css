@@ -256,6 +256,7 @@ footer p {
   display: flex;
   height: 90vh;
   background: rgb(225, 100, 95);
+  font-family: 'Futura PT', sans-serif
 }
 
 .artist-info-container {
@@ -357,11 +358,7 @@ footer p {
   padding-left: 3rem;
   padding-right: 3rem;
   height: 110vh;
-  width: fit-content;
-}
-
-.song-content {
-  display: flex;
+  font-family: 'Futura PT', sans-serif
 }
 
 .song-container {
