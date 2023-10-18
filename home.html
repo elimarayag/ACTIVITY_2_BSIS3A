@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Music</title>
+    <title>Music Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -32,9 +32,6 @@
         </div>
     </nav>
     <section id="home-section">
-        <div class="about-image">
-            <img src="./assets/bg.gif" alt="About Image">
-        </div>
     </section>    
     <section id="genre">
         <div class="genre-container">
@@ -60,17 +57,15 @@
         </div>
     </section>
     <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
-              <li><a href="#genre" onclick="toggleMenu()">Genre</a></li>
-              <li><a href="#about-content" onclick="toggleMenu()">About</a></li>
-            </ul>
-          </div>
+        <nav class="footer-nav">
+          <ul class="nav-links">
+            <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#genre" onclick="toggleMenu()">Genre</a></li>
+            <li><a href="#about-content" onclick="toggleMenu()">About</a></li>
+          </ul>
         </nav>
         <p>Copyright &#169; 2023. All Rights Reserved.</p>
-      </footer>
+      </footer>      
       <script src="script.js"></script>
 </body>
 </html>
