@@ -323,7 +323,7 @@ footer {
 
 .album-container {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
   gap: 1.5rem;
 }
 
@@ -331,7 +331,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #D1D7E0;
-  height: 45vh;
+  height: 42.5vh;
   width: 30vh;
   border-radius: 20px;
 }
@@ -361,7 +361,8 @@ footer {
 
 .album-name {
   color: black;
-  padding-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: bold;
   text-align: center;
 }
