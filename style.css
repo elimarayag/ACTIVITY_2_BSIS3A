@@ -181,6 +181,7 @@ a:hover {
 }
 
 .genre-slide img {
+    padding-top: 60px;
     width: 90%;
     height: 70%; 
     }
@@ -188,7 +189,7 @@ a:hover {
 .arrow {
     cursor: pointer;
     position: absolute;
-    top: 35%;
+    top: 45%;
     transform: translateY(-50%);
     font-size: 2rem;
     background: rgba(0, 0, 0, 0.3);
