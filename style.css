@@ -146,7 +146,7 @@ a:hover {
   transform: none;
 }
 
-/*section about*/
+/*home section*/
 #home-section {
     background-image: url('./assets/bg.gif');
     background-size: cover;
@@ -253,9 +253,6 @@ footer {
 .footer-nav a:hover {
   color: white;
 }
-
-
-
 
 /*Pop Artists HTML*/
 
