@@ -298,7 +298,6 @@ footer {
 }
 
 .artist-name-container {
-  position: absolute;
   bottom: 5rem;
   left: 3rem;
   font-size: 3.5rem;
@@ -309,7 +308,6 @@ footer {
 
 .artist-name {
   margin: 0;
-  color: #802BB1;
 }
 
 .artist-details-container {
@@ -319,9 +317,13 @@ footer {
   line-height: 2rem;
 }
 
+.artist-details {
+  margin-top: 2.5rem;
+}
+
 .album-container {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 2rem;
   gap: 1.5rem;
 }
 
