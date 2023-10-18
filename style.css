@@ -282,7 +282,7 @@ footer {
   display: flex;
   height: 90vh;
   background: #2D283E;
-  font-family: 'Futura PT', sans-serif
+  font-family: 'Futura PT', sans-serif;
 }
 
 .artist-info-container {
@@ -332,7 +332,11 @@ footer {
   height: 45vh;
   width: 30vh;
   border-radius: 20px;
+}
+
+.album-details-container:hover {
   box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  transition: all 300ms ease;
 }
 
 .album-pic-container {
@@ -371,15 +375,18 @@ footer {
   border: none;
   height: 2rem;
   width: 4.5rem;
-  background: rgb(225, 100, 95);
+  background: #802BB1;
   border-radius: 1rem;
+  font-weight: bold;
+  font-family: 'Futura PT', sans-serif;
 }
 
 .btn:hover {
-  border-color: rgb(225, 100, 95);
+  border-color: #802BB1;
   background: none;
-  color: rgb(225, 100, 95);
+  color: #802BB1;
   transition: all 300ms ease;
+  font-weight: bold;
 }
 
 
@@ -397,7 +404,7 @@ footer {
 }
 
 .song-container {
-  color: rgb(225, 100, 95);
+  color: black;
   font-weight: bold;
   display: flex;
   gap: 11rem;
