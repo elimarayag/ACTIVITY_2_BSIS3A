@@ -1,3 +1,4 @@
+
 :root {
     --spotify-green: #1DB954;
     --footer-height: 40px;
@@ -12,7 +13,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     overflow-x: hidden;
-    font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Futura PT', sans-serif;
     max-height: 100vh;
     height: 100vh;
     overflow-y: hidden;
@@ -128,7 +129,7 @@ background: linear-gradient(180deg, #D1D7E0 0%, #2D383E 100%);
 .playlist-public {
     font-size: 12px;
     font-weight: 600;
-    font-family: "AvenirLTStd-Black";
+    font-family: 'Futura PT', sans-serif;
 }
 
 .playlist-title {
@@ -136,7 +137,7 @@ background: linear-gradient(180deg, #D1D7E0 0%, #2D383E 100%);
     font-weight: 1000;
 
     margin-top: 10px;
-    font-family: "AvenirLTStd-Black";
+    font-family: 'Futura PT', sans-serif;
 }
 
 .playlist-description {
@@ -153,7 +154,7 @@ background: linear-gradient(180deg, #D1D7E0 0%, #2D383E 100%);
 
 .playlist-stats span:first-of-type {
     font-weight: 1000;
-    font-family: "AvenirLTStd-Black";
+    font-family: 'Futura PT', sans-serif;
 }
 
 .playlist-stats  img{
@@ -163,7 +164,7 @@ background: linear-gradient(180deg, #D1D7E0 0%, #2D383E 100%);
 
 .playlist-stats span:first-of-type {
     font-weight: 1000;
-    font-family: "AvenirLTStd-Black";
+    font-family: 'Futura PT', sans-serif;
 }
 
 
