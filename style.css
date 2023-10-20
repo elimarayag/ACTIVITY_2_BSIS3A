@@ -165,9 +165,17 @@ a:hover {
     margin-bottom: 0;
 }
 
+.genre-title {
+  color: rgb(249, 199, 79);
+  position: absolute;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .genre-container {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .genre-slides {
@@ -183,12 +191,13 @@ a:hover {
 .genre-slide img {
     width: 90%;
     height: 70%; 
+    margin-top: 70px;
     }
 
 .arrow {
     cursor: pointer;
     position: absolute;
-    top: 35%;
+    top: 45%;
     transform: translateY(-50%);
     font-size: 2rem;
     background: rgba(0, 0, 0, 0.3);
