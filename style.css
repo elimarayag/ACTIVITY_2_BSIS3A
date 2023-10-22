@@ -488,6 +488,7 @@ footer {
   display: flex;
   justify-content: left; 
   align-items: center;
+  font-size: 15px;
 }
 
 .title {
