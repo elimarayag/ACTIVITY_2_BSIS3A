@@ -167,18 +167,90 @@ background: linear-gradient(180deg, #D1D7E0 0%, #2D383E 100%);
     font-family: 'Futura PT', sans-serif;
 }
 
+.footer-player  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #181818;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height: var(--footer-height);
+}
+
+.footer-player-left-like svg path {
+    fill: var(--spotify-green);
+}
+.footer-player-left-like {
+    padding-left: 30px;
+}
+
+.footer-player-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-player-middle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-player-middle-buttons img  {
+    width: 15px;
+    padding: 15px;
+}
+
+.footer-player-middle-buttons, .footer-player-middle-slider {
+    display: flex;
+    justify-content: center;
+}
+
+.playlist-songs-container {
+    height: 800px;
+    padding: 20px;
+    background: rgb(95,95,95);
+    background: linear-gradient(180deg, rgba(95,95,95,1) 0%, rgba(18,18,18,1) 22%, rgba(18,18,18,1) 100%);
+}
+
+.playlist-buttons-download, .playlist-buttons-three-dot {
+    margin-left: 20px;
+}
+
+.playlist-buttons-download svg path, .playlist-buttons-three-dot svg path, .playlist-buttons-search svg path {
+    fill: #CACACA;
+}
+
+.playlist-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlist-buttons-order {
+    color:#CACACA;
+}
+
+.playlist-buttons-order {
+    padding-left: 20px;
+}
+
+
 
 .spotify-playlists {
     padding: 20px 40px;
+
+
   }
   .spotify-playlists h2 {
-    color: #000000;
+    color: #ffffff;
     font-size: 22px;
     margin-bottom: 20px;
   }
   .spotify-playlists .list {
     display: flex;
-    gap: 20px;
+    gap: 625px;
     overflow: hidden;
   }
   .spotify-playlists .list .item {
@@ -234,3 +306,10 @@ background: linear-gradient(180deg, #D1D7E0 0%, #2D383E 100%);
     border-color: #636363;
   }
   
+  .playlist-songs-container {
+    height: 1000px;
+    padding: 20px;
+    background: rgb(95,95,95);
+    background: linear-gradient(180deg, rgba(95,95,95,1) 0%, rgba(18,18,18,1) 22%, rgba(18,18,18,1) 100%);
+}
+
