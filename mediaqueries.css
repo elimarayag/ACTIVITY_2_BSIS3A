@@ -7,7 +7,11 @@
         display: flex;
         justify-content: center;
     }
+
+    #about-content {
+        padding: 50px;
     }
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -24,6 +28,20 @@
     #about-content {
         padding: 50px; 
       }
+
+    .section-title {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+    }
 
     #hamburger-nav {
         text-align: right;
@@ -43,15 +61,32 @@
 
     #genre {
         width: 100%;
-        padding: 0 0;
+        padding: 0;
+    }
+
+    .genre-title {
+        font-size: 1rem;
+    }
+
+    .arrow {
+        font-size: 1 rem;
     }
 
     #about-content {
         padding: 10px; 
       }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
 
-    .arrow {
-        font-size: 1 rem;
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
     }
 
     #desktop-nav {
