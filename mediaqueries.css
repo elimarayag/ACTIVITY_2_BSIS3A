@@ -29,18 +29,14 @@
         padding: 50px; 
       }
 
-    .section-title {
-        text-align: center;
-        margin: 20px 0;
-    }
-
     .team {
         flex-direction: column;
         align-items: center;
     }
 
     .team-member {
-        width: 80%;
+        flex: 0 0 5%;
+        padding: .5px;
     }
 
     #hamburger-nav {
@@ -56,7 +52,7 @@
 
     #home-section {
         background-size: contain;
-        padding: 0 0;
+        padding: 0;
     }
 
     #genre {
@@ -76,17 +72,24 @@
         padding: 10px; 
       }
     
-    .section-title {
-        font-size: 1.5rem;
-    }
-
-    .team {
+    .team-members {
         flex-direction: column;
-        align-items: center;
+        padding: 1px;
     }
 
     .team-member {
-        width: 90%;
+        flex: 0 0 .07%;
+        margin: 5px;
+        width: 100px;
+    }
+    
+    .member-photo img{
+        width: 90px;
+    }
+    
+    .github-button {
+        padding: 5px 8px;
+        font-size: 0.9rem;
     }
 
     #desktop-nav {
