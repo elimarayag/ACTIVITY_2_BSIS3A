@@ -9,15 +9,13 @@
   <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
 </head>
 <body>
-  <nav id="back-btn-nav">
-    <div class="back-btn-container">
-      <img src="./assets/back-btn.png" alt="Back Button" 
-      class="back-btn" onclick="location.href='index.html'">
-    </div>
-  </nav>
   <section id="artist-info">
     <div class="artist-info-container">
       <div class="artist-profile-container">
+        <div class="back-btn-container">
+          <img src="./assets/back-btn.png" alt="Back Button" 
+          class="back-btn" onclick="location.href='index.html'">
+        </div>
         <div class="artist-pic-container">
           <img src="./assets/billie-eilish.jpg" 
           alt="Billie Eilish" class="artist-pic">
@@ -196,7 +194,7 @@
       </div>
     </div>
   </section>
-  <div id="overlay">
+  <a href="#artist-info" id="overlay">
     <div class="album-popup">
       <div class="popup-cover">
         <img src="./assets/be-album-1.jpg" 
@@ -264,8 +262,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div id="overlay-2">
+  </a>
+  <a href="#artist-info" id="overlay-2">
     <div class="album-popup-2">
       <div class="popup-cover">
         <img src="./assets/be-album-2.jpg" 
@@ -355,8 +353,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div id="overlay-3">
+  </a>
+  <a href="#artist-info" id="overlay-3">
     <div class="album-popup-3">
       <div class="popup-cover">
         <img src="./assets/be-album-3.jpg" 
@@ -452,5 +450,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </a>
 </body>

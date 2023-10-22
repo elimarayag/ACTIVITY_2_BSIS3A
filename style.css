@@ -265,17 +265,15 @@ footer {
 
 /*Pop Artists HTML*/
 
-#back-btn-nav {
-  display: flex;
-  position: fixed;
-  padding-left: 3rem;
-  padding-top: 1rem;
-} 
-
 .back-btn {
   height: 3rem;
   width: auto;
   border-radius: 1.5rem;
+}
+
+.back-btn-container {
+  position: absolute;
+  margin: 3rem;
 }
 
 .back-btn:hover {
@@ -292,6 +290,7 @@ footer {
   height: 90vh;
   background: #2D283E;
   font-family: 'Futura PT', sans-serif;
+  position: fixed;
 }
 
 .artist-info-container {
@@ -489,6 +488,7 @@ footer {
   display: flex;
   justify-content: left; 
   align-items: center;
+  font-size: 15px;
 }
 
 .title {
@@ -522,10 +522,14 @@ footer {
   background-color: #4C495D;
   color: white;
   justify-content: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
   height: 110vh;
-  font-family: 'Futura PT', sans-serif
+  font-family: 'Futura PT', sans-serif;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  position: absolute;
+  margin-top: 85vh;
+  width: 100%;
+  box-shadow: 0px 0px 30px black;
 }
 
 .song-container {
