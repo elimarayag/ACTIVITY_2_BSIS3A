@@ -111,16 +111,20 @@
     .album-popup {
         display: inline;
         height: 53rem;
+        width: 40rem;
     }
 
     .album-popup-2 {
         display: inline;
         height: 65rem;
+        width: 40rem;
     }
 
     .album-popup-3 {
         display: inline;
         height: 67rem;
+        width: 40rem;
+        width: 40rem;
     }
 
     .popup-cover,
@@ -129,8 +133,12 @@
     }
 
     .popup-songs {
-        margin-left: 13rem;
+        margin-left: 5rem;
         justify-content: center;
         align-items: center;
+    }
+
+    .title {
+        width: 22rem;
     }
 }
