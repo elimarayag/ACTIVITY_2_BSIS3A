@@ -19,6 +19,11 @@
         background-size: cover;
         padding: 50px 0;
     }
+    
+    .photo{
+        height: 100px;
+        width: 100px;
+    }
 
     #genre {
         width: 90%;
@@ -55,9 +60,14 @@
         padding: 0;
     }
 
+    .home-content {
+        max-width: 400px;
+        padding: 3px;
+    }
+
     #genre {
         width: 100%;
-        padding: 0;
+        padding: 10px;
     }
 
     .genre-title {
@@ -66,6 +76,7 @@
 
     .arrow {
         font-size: 1 rem;
+        top: 55%;
     }
 
     #about-content {
