@@ -340,10 +340,6 @@ footer {
 }
 
 
-.playlist-header {
-background: #4C495D;
-background: linear-gradient(180deg, #D1D7E0 0%, #2D383E 100%);
-}
 
 .playlist-content {
   display: flex;
@@ -450,8 +446,8 @@ background: linear-gradient(180deg, #D1D7E0 0%, #2D383E 100%);
 .playlist-songs-container {
   height: 800px;
   padding: 20px;
-  background: rgb(95,95,95);
-  background: linear-gradient(180deg, rgba(95,95,95,1) 0%, rgba(18,18,18,1) 22%, rgba(18,18,18,1) 100%);
+  background: #2d2a40;
+  background: linear-gradient(180deg, #474365 0%, #2d2a40 22%, #2d2a40 100%);
 }
 
 
@@ -467,14 +463,14 @@ background: linear-gradient(180deg, #D1D7E0 0%, #2D383E 100%);
 }
 .spotify-playlists .list {
   display: flex;
-  gap: 200px;
+  gap: 100px;
   overflow: hidden;
 }
 .spotify-playlists .list .item {
   min-width: 140px;
   width: 160px;
   padding: 15px;
-  background-color: #181818;
+  background-color: rgb(209,215,224);
   border-radius: 6px;
   cursor: pointer;
   transition: all ease 0.4s;
@@ -522,14 +518,6 @@ background: linear-gradient(180deg, #D1D7E0 0%, #2D383E 100%);
   margin: 70px 0px 0px;
   border-color: #636363;
 }
-
-.playlist-songs-container {
-  height: 1000px;
-  padding: 20px;
-  background: rgb(95,95,95);
-  background: linear-gradient(180deg, rgba(95,95,95,1) 0%, rgba(18,18,18,1) 22%, rgba(18,18,18,1) 100%);
-}
-
 
 
 
