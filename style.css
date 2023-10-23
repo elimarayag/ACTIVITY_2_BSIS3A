@@ -308,6 +308,269 @@ footer {
 .footer-nav a:hover {
   color: white;
 }
+/*Pop HTML*/
+
+.menu li {
+  padding-left: 0 !important;
+}
+
+.playlists {
+  font-weight: 400 !important;
+}
+
+.playlists ul li a span {
+  left: 0px;
+}
+
+
+
+.current-song-cover img {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  left: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - var(--footer-height)) !important;
+}
+
+
+.right {
+  width: 100%;
+}
+
+
+.arrow-container {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #434343;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-arrows  {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-container {
+  margin-right: 15px !important;
+}
+
+.playlist-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playlist-header {
+  padding: 20px;
+}
+
+.playlist-top-email {
+  display: flex;
+  align-items: center;
+  background-color: #434343;
+  border-radius: 20px;
+  color:white;
+}
+
+.playlist-header .arrow-container {
+  background-color: #535353;
+  margin: 2px;
+}
+
+.playlist-top-email span {
+  padding: 0 10px;
+}
+
+
+
+.playlist-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.playlist-cover img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
+-webkit-box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
+}
+
+.playlist-info {
+  color:white;
+  padding-left: 20px;
+}
+
+.playlist-public {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.playlist-title {
+  font-size: 86px;
+  font-weight: 700;
+
+  margin-top: 10px;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.playlist-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  color:#B5B5B5;
+}
+
+.playlist-stats  img{
+  position: relative;
+  top: 6px;
+}
+
+.playlist-stats span:first-of-type {
+  font-weight: 1000;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.playlist-stats  img{
+  position: relative;
+  top: 6px;
+}
+
+.playlist-stats span:first-of-type {
+  font-weight: 1000;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.footer-player  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #181818;
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height: var(--footer-height);
+}
+
+.footer-player-left-like svg path {
+  fill: var(--spotify-green);
+}
+.footer-player-left-like {
+  padding-left: 30px;
+}
+
+.footer-player-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-player-middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-player-middle-buttons img  {
+  width: 15px;
+  padding: 15px;
+}
+
+.footer-player-middle-buttons, .footer-player-middle-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.playlist-songs-container {
+  height: 800px;
+  padding: 20px;
+  background: #2d2a40;
+  background: linear-gradient(180deg, #474365 0%, #2d2a40 22%, #2d2a40 100%);
+}
+
+
+.spotify-playlists {
+  padding: 20px 40px;
+
+
+}
+.spotify-playlists h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 100px;
+}
+.spotify-playlists .list {
+  display: flex;
+  gap: 100px;
+  overflow: hidden;
+}
+.spotify-playlists .list .item {
+  min-width: 140px;
+  width: 160px;
+  padding: 15px;
+  background-color: rgb(209,215,224);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover {
+  background-color: #252525;
+}
+.spotify-playlists .list .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.spotify-playlists .list .item .play {
+  position: relative;
+}
+.spotify-playlists .list .item .play .fa {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+.spotify-playlists .list .item h4 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.spotify-playlists .list .item p {
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.spotify-playlists hr {
+  margin: 70px 0px 0px;
+  border-color: #636363;
+}
+
+
 
 /*Pop Artists HTML*/
 
@@ -629,3 +892,7 @@ footer {
   box-shadow: 0px 0px 20px white;
   transition: all 300ms ease;
 }
+
+
+
+
