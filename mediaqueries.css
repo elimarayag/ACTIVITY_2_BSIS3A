@@ -19,6 +19,11 @@
         background-size: cover;
         padding: 50px 0;
     }
+    
+    .photo{
+        height: 100px;
+        width: 100px;
+    }
 
     #genre {
         width: 90%;
@@ -29,18 +34,14 @@
         padding: 50px; 
       }
 
-    .section-title {
-        text-align: center;
-        margin: 20px 0;
-    }
-
     .team {
         flex-direction: column;
         align-items: center;
     }
 
     .team-member {
-        width: 80%;
+        flex: 0 0 5%;
+        padding: .5px;
     }
 
     #hamburger-nav {
@@ -56,12 +57,17 @@
 
     #home-section {
         background-size: contain;
-        padding: 0 0;
+        padding: 0;
+    }
+
+    .home-content {
+        max-width: 400px;
+        padding: 3px;
     }
 
     #genre {
         width: 100%;
-        padding: 0;
+        padding: 10px;
     }
 
     .genre-title {
@@ -70,23 +76,31 @@
 
     .arrow {
         font-size: 1 rem;
+        top: 55%;
     }
 
     #about-content {
         padding: 10px; 
       }
     
-    .section-title {
-        font-size: 1.5rem;
-    }
-
-    .team {
+    .team-members {
         flex-direction: column;
-        align-items: center;
+        padding: 1px;
     }
 
     .team-member {
-        width: 90%;
+        flex: 0 0 .07%;
+        margin: 5px;
+        width: 100px;
+    }
+    
+    .member-photo img{
+        width: 90px;
+    }
+    
+    .github-button {
+        padding: 5px 8px;
+        font-size: 0.9rem;
     }
 
     #desktop-nav {
