@@ -5,6 +5,16 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    animation: backgroundSlide 20s linear infinite;
+}
+
+@keyframes backgroundSlide {
+  0% {
+      background-position: 0% 0%;
+  }
+  100% {
+      background-position: 100% 0%;
+  }
 }
 
 html {
@@ -38,6 +48,8 @@ nav {
 }
 
 a {
+    color: rgb(209,215,224);
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
     color: rgb(209,215,224);
     text-shadow: 0px 0px 20px rgb(255, 255, 255);
     text-decoration: none;
@@ -91,6 +103,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
+  background-color: rgb(128,43,177);
   background-color: rgb(128,43,177);
   transition: all 0.3 ease-in-out;
 }
@@ -149,14 +162,52 @@ a:hover {
 
 /*home section*/
 #home-section {
-    background-image: url('./assets/bg.gif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 100px 0; 
-    margin: 0;
-    height: 80vh
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* Style for home content */
+.home-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    flex-direction: row-reverse; /* Reverses the order of the items */
+}
+
+.photo {
+    flex: 1;
+    padding: 20px;
+    order: 2;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin: auto 0;
+}
+
+.description {
+    flex: 1;
+    padding: 20px;
+    order: 1;
+    text-align: left;
+}
+
+
+.description h1 {
+    font-size: 2rem;
+    color: rgb(128, 43, 177);
+}
+
+.description p {
+    padding-left: 5px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
 
 /* section genre*/
 #genre {
@@ -167,6 +218,7 @@ a:hover {
 }
 
 .genre-title {
+  color: rgb(209,215,224);
   color: rgb(209,215,224);
   position: absolute;
   text-align: center;
@@ -216,9 +268,30 @@ a:hover {
     right: 0;
 }
 
+/*About section*/
+
 #about-content {
     padding: 50px;
     text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(128, 43, 177);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.github-button:hover {
+    background-color: #9553b6;
     color: rgb(249, 199, 79)
 }
 
@@ -282,6 +355,7 @@ button:hover {
   background-color: #9553b6;
 }
 
+
 /* Footer Section */
 
 footer {
@@ -311,6 +385,7 @@ footer {
 .footer-nav a {
   text-decoration: none;
   color: rgb(209,215,224);
+  color: rgb(209,215,224);
   font-size: 1.5rem;
   transition: color 0.3s;
 }
@@ -318,20 +393,281 @@ footer {
 .footer-nav a:hover {
   color: white;
 }
+/*Pop HTML*/
+
+.menu li {
+  padding-left: 0 !important;
+}
+
+.playlists {
+  font-weight: 400 !important;
+}
+
+.playlists ul li a span {
+  left: 0px;
+}
+
+
+
+.current-song-cover img {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  left: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - var(--footer-height)) !important;
+}
+
+
+.right {
+  width: 100%;
+}
+
+
+.arrow-container {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #434343;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-arrows  {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-container {
+  margin-right: 15px !important;
+}
+
+.playlist-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playlist-header {
+  padding: 20px;
+}
+
+.playlist-top-email {
+  display: flex;
+  align-items: center;
+  background-color: #434343;
+  border-radius: 20px;
+  color:white;
+}
+
+.playlist-header .arrow-container {
+  background-color: #535353;
+  margin: 2px;
+}
+
+.playlist-top-email span {
+  padding: 0 10px;
+}
+
+
+
+.playlist-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.playlist-cover img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
+-webkit-box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 2px 35px -1px rgba(0,0,0,0.45);
+}
+
+.playlist-info {
+  color:white;
+  padding-left: 20px;
+}
+
+.playlist-public {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.playlist-title {
+  font-size: 86px;
+  font-weight: 700;
+
+  margin-top: 10px;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.playlist-description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  color:#B5B5B5;
+}
+
+.playlist-stats  img{
+  position: relative;
+  top: 6px;
+}
+
+.playlist-stats span:first-of-type {
+  font-weight: 1000;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.playlist-stats  img{
+  position: relative;
+  top: 6px;
+}
+
+.playlist-stats span:first-of-type {
+  font-weight: 1000;
+  font-family: 'Futura PT', sans-serif;
+}
+
+.footer-player  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #181818;
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height: var(--footer-height);
+}
+
+.footer-player-left-like svg path {
+  fill: var(--spotify-green);
+}
+.footer-player-left-like {
+  padding-left: 30px;
+}
+
+.footer-player-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-player-middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-player-middle-buttons img  {
+  width: 15px;
+  padding: 15px;
+}
+
+.footer-player-middle-buttons, .footer-player-middle-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.playlist-songs-container {
+  height: 800px;
+  padding: 20px;
+  background: #2d2a40;
+  background: linear-gradient(180deg, #474365 0%, #2d2a40 22%, #2d2a40 100%);
+}
+
+
+.spotify-playlists {
+  padding: 20px 40px;
+
+
+}
+.spotify-playlists h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 100px;
+}
+.spotify-playlists .list {
+  display: flex;
+  gap: 100px;
+  overflow: hidden;
+}
+.spotify-playlists .list .item {
+  min-width: 140px;
+  width: 160px;
+  padding: 15px;
+  background-color: rgb(209,215,224);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover {
+  background-color: #252525;
+}
+.spotify-playlists .list .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.spotify-playlists .list .item .play {
+  position: relative;
+}
+.spotify-playlists .list .item .play .fa {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+.spotify-playlists .list .item h4 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.spotify-playlists .list .item p {
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.spotify-playlists hr {
+  margin: 70px 0px 0px;
+  border-color: #636363;
+}
+
+
 
 /*Pop Artists HTML*/
-
-#back-btn-nav {
-  display: flex;
-  position: fixed;
-  padding-left: 3rem;
-  padding-top: 1rem;
-} 
 
 .back-btn {
   height: 3rem;
   width: auto;
   border-radius: 1.5rem;
+}
+
+.back-btn-container {
+  position: absolute;
+  margin: 3rem;
 }
 
 .back-btn:hover {
@@ -348,6 +684,7 @@ footer {
   height: 90vh;
   background: #2D283E;
   font-family: 'Futura PT', sans-serif;
+  position: fixed;
 }
 
 .artist-info-container {
@@ -396,7 +733,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #D1D7E0;
-  height: 42.5vh;
+  height: 35vh;
   width: 30vh;
   border-radius: 20px;
 }
@@ -404,6 +741,7 @@ footer {
 .album-details-container:hover {
   box-shadow: 0px 0px 10px rgb(255, 255, 255);
   transition: all 300ms ease;
+  text-decoration: none;
 }
 
 .album-pic-container {
@@ -430,12 +768,125 @@ footer {
   margin-bottom: 10px;
   font-weight: bold;
   text-align: center;
+  font-size: 17px;
 }
 
 .album-btn-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#overlay,
+#overlay-2,
+#overlay-3 {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 300ms;
+  color: white;
+  font-family: 'Futura PT', sans-serif;
+}
+
+#overlay:target,
+#overlay-2:target,
+#overlay-3:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.album-popup,
+.album-popup-2,
+.album-popup-3 {
+  position: absolute;
+  display: flex;
+  position: fixed;
+  background: #2D283E;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  border-radius: 20px;
+  height: 30rem;
+  width: 45rem;
+  transition: all 300ms ease-in-out;
+  padding: 0;
+}
+
+.album-popup-2 {
+  height: 35rem;
+}
+
+.album-popup-3 {
+  height: 38rem;
+}
+
+.back-popup {
+  display: flex;
+  height: 30px;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+}
+
+.back-popup:hover {
+  cursor: pointer;  
+  border-radius: 1.5rem;
+  box-shadow: 0px 0px 10px white;
+  transition: all 300ms ease;
+}
+
+.popup-cover {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.album-cover {
+  height: 15rem;
+  border-radius: 20px;
+}
+
+.album-title {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.album-details {
+  font-size: 15px;
+  font-weight: normal;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0;
+  justify-content: center;
+}
+
+.album-contents {
+  margin: 0;
+}
+
+.album-song {
+  display: flex;
+  gap: 5rem;
+  height: 2rem;
+}
+
+.title,
+.time {
+  display: flex;
+  justify-content: left; 
+  align-items: center;
+  font-size: 15px;
+}
+
+.title {
+  width: 12rem;
 }
 
 .btn {
@@ -465,10 +916,14 @@ footer {
   background-color: #4C495D;
   color: white;
   justify-content: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
   height: 110vh;
-  font-family: 'Futura PT', sans-serif
+  font-family: 'Futura PT', sans-serif;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  position: absolute;
+  margin-top: 85vh;
+  width: 100%;
+  box-shadow: 0px 0px 30px black;
 }
 
 .song-container {
@@ -522,3 +977,7 @@ footer {
   box-shadow: 0px 0px 20px white;
   transition: all 300ms ease;
 }
+
+
+
+

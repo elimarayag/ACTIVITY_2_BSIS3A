@@ -9,15 +9,13 @@
   <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
 </head>
 <body>
-  <nav id="back-btn-nav">
-    <div class="back-btn-container">
-      <img src="./assets/back-btn.png" alt="Back Button" 
-      class="back-btn" onclick="location.href='index.html'">
-    </div>
-  </nav>
   <section id="artist-info">
     <div class="artist-info-container">
       <div class="artist-profile-container">
+        <div class="back-btn-container">
+          <img src="./assets/back-btn.png" alt="Back Button" 
+          class="back-btn" onclick="location.href='index.html'">
+        </div>
         <div class="artist-pic-container">
           <img src="./assets/billie-eilish.jpg" 
           alt="Billie Eilish" class="artist-pic">
@@ -36,10 +34,10 @@
             person ever to win a Grammy for album of the year.</p>
         </div>
         <div class="album-txt">
-          <p>Popular Albums:</p>
+          <p>Top 3 Albums:</p>
         </div>
         <div class="album-container">
-          <div class="album-details-container">
+          <a href="#overlay" class="album-details-container">
             <div class="album-pic-container">
               <img src="./assets/be-album-1.jpg" 
               alt="Don't Smile at Me" class="album-pic">
@@ -47,18 +45,8 @@
             <div class="album-name-container">
               <p class="album-name">Don't Smile at Me</p>
             </div>
-            <div class="album-btn-container">
-              <button class="btn"
-              onclick="window.open('https://open.spotify.com/album/7fRrTyKvE4Skh93v97gtcU')">
-              Spotify
-              </button>
-              <button class="btn"
-              onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_nIRucMqHzXWnzwn7xJFFMMrbo8o8wCOJo')">
-              Youtube
-              </button>
-            </div>
-          </div>
-          <div class="album-details-container">
+          </a>
+          <a href="#overlay-2" class="album-details-container">
             <div class="album-pic-container">
               <img src="./assets/be-album-2.jpg" 
               alt="Don't Smile at Me" class="album-pic">
@@ -66,18 +54,8 @@
             <div class="album-name-container">
               <p class="album-name">WWAFA,WDWG?</p>
             </div>
-            <div class="album-btn-container">
-              <button class="btn"
-              onclick="window.open('https://open.spotify.com/album/0S0KGZnfBGSIssfF54WSJh')">
-              Spotify
-              </button>
-              <button class="btn"
-              onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_mHeA8ArGIJHCD7nReACfktWaKz_ogNTlA')">
-              Youtube
-              </button>
-            </div>
-          </div>
-          <div class="album-details-container">
+          </a>
+          <a href="#overlay-3" class="album-details-container">
             <div class="album-pic-container">
               <img src="./assets/be-album-3.jpg" 
               alt="Don't Smile at Me" class="album-pic">
@@ -85,17 +63,7 @@
             <div class="album-name-container">
               <p class="album-name">Happier Than Ever</p>
             </div>
-            <div class="album-btn-container">
-              <button class="btn"
-              onclick="window.open('https://open.spotify.com/album/0JGOiO34nwfUdDrD612dOp')">
-              Spotify
-              </button>
-              <button class="btn"
-              onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_kZTe3AtTLf-rVTNFfmKMdy9wp16xmg0qs')">
-              Youtube
-              </button>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -226,4 +194,261 @@
       </div>
     </div>
   </section>
+  <a href="#artist-info" id="overlay">
+    <div class="album-popup">
+      <div class="popup-cover">
+        <img src="./assets/be-album-1.jpg" 
+        alt="Album Cover" class="album-cover">
+        <p class="album-title">
+          Don't Smile At Me
+        </p>
+        <div class="album-details">
+          <p class="album-contents">2017</p>
+          <p class="album-contents">9 songs</p>
+          <p class="album-contents">28 min 59 sec</p>
+        </div>
+        <div class="album-btn-container">
+          <button class="btn"
+          onclick="window.open('https://open.spotify.com/album/7fRrTyKvE4Skh93v97gtcU')">
+          Spotify
+          </button>
+          <button class="btn"
+          onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_nIRucMqHzXWnzwn7xJFFMMrbo8o8wCOJo')">
+          Youtube
+          </button>
+        </div>
+      </div>
+      <div class="popup-songs">
+        <div class="back">
+          <img src="./assets/back-btn.png" 
+          alt="Back Button" class="back-popup"
+          onclick="location.href='pop-artist-1.html'">
+        </div>
+        <div class="album-song">
+          <p class="title">COPYCAT</p>
+          <p class="time">3:14</p>
+        </div>
+        <div class="album-song">
+          <p class="title">idontwannabeyouanymore</p>
+          <p class="time">3:23</p>
+        </div>
+        <div class="album-song">
+          <p class="title">my boy</p>
+          <p class="time">2:50</p>
+        </div>
+        <div class="album-song">
+          <p class="title">watch</p>
+          <p class="time">2:57</p>
+        </div>
+        <div class="album-song">
+          <p class="title">party favor</p>
+          <p class="time">3:24</p>
+        </div>
+        <div class="album-song">
+          <p class="title">bellyache</p>
+          <p class="time">2:59</p>
+        </div>
+        <div class="album-song">
+          <p class="title">ocean eyes</p>
+          <p class="time">3:20</p>
+        </div>
+        <div class="album-song">
+          <p class="title">hostage</p>
+          <p class="time">3:49</p>
+        </div>
+        <div class="album-song">
+          <p class="title">&burn (with Vince Staples)</p>
+          <p class="time">2:59</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="#artist-info" id="overlay-2">
+    <div class="album-popup-2">
+      <div class="popup-cover">
+        <img src="./assets/be-album-2.jpg" 
+        alt="Album Cover" class="album-cover">
+        <p class="album-title">
+          WWAFA, WDWG?
+        </p>
+        <div class="album-details">
+          <p class="album-contents">2019</p>
+          <p class="album-contents">14 songs</p>
+          <p class="album-contents">42 min 55 sec</p>
+        </div>
+        <div class="album-btn-container">
+          <div class="album-btn-container">
+            <button class="btn"
+            onclick="window.open('https://open.spotify.com/album/0S0KGZnfBGSIssfF54WSJh')">
+            Spotify
+            </button>
+            <button class="btn"
+            onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_mHeA8ArGIJHCD7nReACfktWaKz_ogNTlA')">
+            Youtube
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="popup-songs">
+        <div class="back">
+          <img src="./assets/back-btn.png" 
+          alt="Back Button" class="back-popup"
+          onclick="location.href='pop-artist-1.html'">
+        </div>
+        <div class="album-song">
+          <p class="title">!!!!!!!</p>
+          <p class="time">0:13</p>
+        </div>
+        <div class="album-song">
+          <p class="title">bad guy</p>
+          <p class="time">3:14</p>
+        </div>
+        <div class="album-song">
+          <p class="title">xanny</p>
+          <p class="time">4:03</p>
+        </div>
+        <div class="album-song">
+          <p class="title">you should see me in a crown</p>
+          <p class="time">3:00</p>
+        </div>
+        <div class="album-song">
+          <p class="title">all the good girls go to hell</p>
+          <p class="time">2:48</p>
+        </div>
+        <div class="album-song">
+          <p class="title">wish you were gay</p>
+          <p class="time">3:41</p>
+        </div>
+        <div class="album-song">
+          <p class="title">when the party's over</p>
+          <p class="time">3:16</p>
+        </div>
+        <div class="album-song">
+          <p class="title">8</p>
+          <p class="time">2:53</p>
+        </div>
+        <div class="album-song">
+          <p class="title">my strange addiction</p>
+          <p class="time">2:59</p>
+        </div>
+        <div class="album-song">
+          <p class="title">bury a friend</p>
+          <p class="time">3:13</p>
+        </div>
+        <div class="album-song">
+          <p class="title">ilomilo</p>
+          <p class="time">2:36</p>
+        </div>
+        <div class="album-song">
+          <p class="title">listen before i go</p>
+          <p class="time">4:02</p>
+        </div>
+        <div class="album-song">
+          <p class="title">i love you</p>
+          <p class="time">4:51</p>
+        </div>
+        <div class="album-song">
+          <p class="title">goodbye</p>
+          <p class="time">1:59</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="#artist-info" id="overlay-3">
+    <div class="album-popup-3">
+      <div class="popup-cover">
+        <img src="./assets/be-album-3.jpg" 
+        alt="Album Cover" class="album-cover">
+        <p class="album-title">
+          Happier Than Ever
+        </p>
+        <div class="album-details">
+          <p class="album-contents">2021</p>
+          <p class="album-contents">16 songs</p>
+          <p class="album-contents">56 min 15 sec</p>
+        </div>
+        <div class="album-btn-container">
+          <button class="btn"
+          onclick="window.open('https://open.spotify.com/album/0JGOiO34nwfUdDrD612dOp')">
+          Spotify
+          </button>
+          <button class="btn"
+          onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_kZTe3AtTLf-rVTNFfmKMdy9wp16xmg0qs')">
+          Youtube
+          </button>
+        </div>  
+      </div>
+      <div class="popup-songs">
+        <div class="back">
+          <img src="./assets/back-btn.png" 
+          alt="Back Button" class="back-popup"
+          onclick="location.href='pop-artist-1.html'">
+        </div>
+        <div class="album-song">
+          <p class="title">Getting Older</p>
+          <p class="time">4:04</p>
+        </div>
+        <div class="album-song">
+          <p class="title">I Didn't Change My Number</p>
+          <p class="time">2:38</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Billie Bossa Nova</p>
+          <p class="time">3:16</p>
+        </div>
+        <div class="album-song">
+          <p class="title">my future</p>
+          <p class="time">3:30</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Ocytocin</p>
+          <p class="time">3:30</p>
+        </div>
+        <div class="album-song">
+          <p class="title">GOLDWING</p>
+          <p class="time">2:31</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Lost Cause</p>
+          <p class="time">3:32</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Halley's Comet</p>
+          <p class="time">3:54</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Not My Responsibility</p>
+          <p class="time">3:47</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Overheated</p>
+          <p class="time">3:34</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Everybody Dies</p>
+          <p class="time">3:26</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Your Power</p>
+          <p class="time">4:05</p>
+        </div>
+        <div class="album-song">
+          <p class="title">NDA</p>
+          <p class="time">3:13</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Therefore I am</p>
+          <p class="time">2:53</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Happier Than Ever</p>
+          <p class="time">4:58</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Male Fantazy</p>
+          <p class="time">3:14</p>
+        </div>
+      </div>
+    </div>
+  </a >
 </body>
