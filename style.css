@@ -1,11 +1,10 @@
 /* style.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(33, 37, 41);
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    animation: backgroundSlide 20s linear infinite;
+  background-image: url('./assets/body.jpg');
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  animation: backgroundSlide 20s linear infinite;
 }
 
 @keyframes backgroundSlide {
@@ -41,7 +40,6 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: space-between;
 }
 
 .nav-links li {
@@ -121,7 +119,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: rgb(249, 199, 79);
+  color: rgb(128,43,177);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -167,133 +165,169 @@ a:hover {
 }
 
 .home-content {
-    display: flex;
-    flex-direction: row;
-    max-width: 1200px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    flex-direction: row-reverse; /* Reverses the order of the items */
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  flex-direction: row-reverse; /* Reverses the order of the items */
 }
 
 .photo {
-    flex: 1;
-    padding: 20px;
-    order: 2;
-    display: flex;
-    height: 300px;
-    width: 300px;
-    margin: auto 0;
+  flex: 1;
+  padding: 20px;
+  order: 2;
+  display: flex;
+  height: 300px;
+  width: 300px;
+  margin: auto 0;
 }
 
 .description {
-    flex: 1;
-    padding: 20px;
-    order: 1;
-    text-align: left;
+  flex: 1;
+  padding: 20px;
+  order: 1;
+  text-align: left;
 }
 
+
 .description h1 {
-    font-size: 2rem;
-    color: rgb(128, 43, 177);
+  font-size: 2rem;
+  color: rgb(128, 43, 177);
 }
 
 .description p {
-    padding-left: 5px;
-    font-size: 1.2rem;
-    color: #333;
+  padding-left: 5px;
+  font-size: 1.2rem;
+  color: #333;
 }
-
 
 /* section genre*/
 
 #title {
-  position: relative;
+  background-color: #802BB1;
 }
 
 .genre-title-container {
-  background-color: #802BB1; 
-  text-align: center; 
   color: rgb(209,215,224);
-  font-size: 1 rem;  
-  overflow: hidden;
-}
-
-.animated-text {
-  animation: moveLeft 10s linear infinite;
-  white-space: nowrap;
-}
-
-@keyframes moveLeft {
-  0% {
-      transform: translateX(100%);
-  }
-  100% {
-      transform: translateX(-100%);
-  }
+  position: absolute;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 #genre {
-  margin: 50px auto;
-  overflow: hidden;
-  position: relative; 
-  margin-bottom: 0;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative; 
+    margin-bottom: 0;
 }
 
 .genre-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: relative; /* Set the genre container to relative positioning */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .genre-slides {
-  display: flex;
-  transition: transform 0.5s;
+    display: flex;
+    transition: transform 0.5s;
 }
 
 .genre-slide {
-  flex: 0 0 100%;
-  max-width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 .genre-slide img {
-  width: 90%;
-  height: 70%; 
-  margin-top: 70px;
-}
+    width: 90%;
+    height: 70%; 
+    margin-top: 70px;
+    }
 
 .arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 45%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  padding: 5px 5px;
-  border: none;
-  z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    z-index: 1;
 }
 
 .prev {
-  left: 0;
+    left: 0;
 }
 
 .next {
-  right: 0;
+    right: 0;
 }
 
-/*About section*/
-
 #about-content {
-    padding: 50px;
-    text-align: center;
-    color: rgb(249, 199, 79)
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.section-title {
+text-align: center;
+margin: 0 auto;
+display: table;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 60px;
+  background-color: rgb(209, 215, 224);
+  margin: 10px;
+}
+
+.member-photo img {
+  border-radius: 15%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto 10px;
+  border: 3px solid rgb(209,215,224);
+}
+
+.member-info {
+  padding: 50px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(128, 43, 177);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: rgb(249, 199, 79)
 }
 
 .github-button:hover {
-    background-color: #9553b6;
+  background-color: #9553b6;
 }
 
 /*contact section*/
@@ -352,7 +386,6 @@ button:hover {
   background-color: #9553b6;
 }
 
-
 /* Footer Section */
 
 footer {
@@ -392,15 +425,17 @@ footer {
 
 /*Pop Artists HTML*/
 
+#back-btn-nav {
+  display: flex;
+  position: fixed;
+  padding-left: 3rem;
+  padding-top: 1rem;
+} 
+
 .back-btn {
   height: 3rem;
   width: auto;
   border-radius: 1.5rem;
-}
-
-.back-btn-container {
-  position: absolute;
-  margin: 3rem;
 }
 
 .back-btn:hover {
@@ -417,7 +452,6 @@ footer {
   height: 90vh;
   background: #2D283E;
   font-family: 'Futura PT', sans-serif;
-  position: fixed;
 }
 
 .artist-info-container {
@@ -466,7 +500,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #D1D7E0;
-  height: 35vh;
+  height: 42.5vh;
   width: 30vh;
   border-radius: 20px;
 }
@@ -474,7 +508,6 @@ footer {
 .album-details-container:hover {
   box-shadow: 0px 0px 10px rgb(255, 255, 255);
   transition: all 300ms ease;
-  text-decoration: none;
 }
 
 .album-pic-container {
@@ -501,125 +534,12 @@ footer {
   margin-bottom: 10px;
   font-weight: bold;
   text-align: center;
-  font-size: 17px;
 }
 
 .album-btn-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-#overlay,
-#overlay-2,
-#overlay-3 {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.8);
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 300ms;
-  color: white;
-  font-family: 'Futura PT', sans-serif;
-}
-
-#overlay:target,
-#overlay-2:target,
-#overlay-3:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.album-popup,
-.album-popup-2,
-.album-popup-3 {
-  position: absolute;
-  display: flex;
-  position: fixed;
-  background: #2D283E;
-  justify-content: center;
-  align-items: center;
-  gap: 3.5rem;
-  border-radius: 20px;
-  height: 30rem;
-  width: 45rem;
-  transition: all 300ms ease-in-out;
-  padding: 0;
-}
-
-.album-popup-2 {
-  height: 35rem;
-}
-
-.album-popup-3 {
-  height: 38rem;
-}
-
-.back-popup {
-  display: flex;
-  height: 30px;
-  margin-bottom: 2rem;
-  border-radius: 1.5rem;
-}
-
-.back-popup:hover {
-  cursor: pointer;  
-  border-radius: 1.5rem;
-  box-shadow: 0px 0px 10px white;
-  transition: all 300ms ease;
-}
-
-.popup-cover {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.album-cover {
-  height: 15rem;
-  border-radius: 20px;
-}
-
-.album-title {
-  margin: 0;
-  margin-top: 1rem;
-}
-
-.album-details {
-  font-size: 15px;
-  font-weight: normal;
-  display: flex;
-  gap: 1rem;
-  margin-top: 0;
-  justify-content: center;
-}
-
-.album-contents {
-  margin: 0;
-}
-
-.album-song {
-  display: flex;
-  gap: 5rem;
-  height: 2rem;
-}
-
-.title,
-.time {
-  display: flex;
-  justify-content: left; 
-  align-items: center;
-  font-size: 15px;
-}
-
-.title {
-  width: 12rem;
+  gap: 1rem;;
 }
 
 .btn {
@@ -649,14 +569,10 @@ footer {
   background-color: #4C495D;
   color: white;
   justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
   height: 110vh;
-  font-family: 'Futura PT', sans-serif;
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-  position: absolute;
-  margin-top: 85vh;
-  width: 100%;
-  box-shadow: 0px 0px 30px black;
+  font-family: 'Futura PT', sans-serif
 }
 
 .song-container {
