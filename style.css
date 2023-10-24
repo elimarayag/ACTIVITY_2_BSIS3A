@@ -160,10 +160,10 @@ a:hover {
 
 /* section genre*/
 #genre {
-    margin: 50px auto;
-    overflow: hidden;
-    position: relative; 
-    margin-bottom: 0;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative; 
+  margin-bottom: 0;
 }
 
 .genre-title {
@@ -217,15 +217,69 @@ a:hover {
 }
 
 #about-content {
-  background-color: #2D283E;
     padding: 50px;
     text-align: center;
-    color: rgb(209,215,224)
+    color: rgb(249, 199, 79)
 }
 
-.about-image img {
-    max-width: 100%;
-    height: auto;
+.github-button:hover {
+    background-color: #9553b6;
+}
+
+/*contact section*/
+
+#contact {
+  background-color: #D1D7E0;
+  text-align: center;
+  padding: 50px 0;
+  border-radius: 50px;
+  height: 60vh;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  color: rgb(128, 43, 177);
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+button {
+  background-color: rgb(128, 43, 177);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #9553b6;
 }
 
 /* Footer Section */
