@@ -14,6 +14,7 @@ body {
   100% {
       background-position: 100% 0%;
   }
+
 }
 
 html {
@@ -95,6 +96,7 @@ a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .hamburger-icon span {
@@ -162,6 +164,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 .home-content {
@@ -260,7 +263,7 @@ a:hover {
 .genre-slide img {
   width: 90%;
   height: 70%;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .arrow {
@@ -372,12 +375,12 @@ h2 {
 }
 
 .contact-container p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
 .form-group {
-  margin: 10px 0;
+  margin: 5px 5;
 }
 
 label {
@@ -387,9 +390,9 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
+  width: 80%;
   padding: 10px;
-  margin: 5px 0;
+  margin: 2px 0;
 }
 
 button {

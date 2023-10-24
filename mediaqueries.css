@@ -57,17 +57,22 @@
 
     #home-section {
         background-size: contain;
-        padding: 0;
+        padding: 10;
     }
 
     .home-content {
-        max-width: 400px;
-        padding: 3px;
+        max-width: 100%;
+        padding: 10px;
+      }
+
+    .description p {
+        font-size: .8rem;
     }
 
     #genre {
-        width: 100%;
-        padding: 10px;
+        width: 95%;
+        padding: 5px;
+        padding-top: 0;
     }
 
     .genre-title {
@@ -76,7 +81,7 @@
 
     .arrow {
         font-size: 1 rem;
-        top: 55%;
+        top: 45%;
     }
 
     #about-content {
@@ -89,7 +94,7 @@
     }
 
     .team-member {
-        flex: 0 0 .07%;
+        flex: 0 0 10%;
         margin: 5px;
         width: 100px;
     }
@@ -102,6 +107,7 @@
         padding: 5px 8px;
         font-size: 0.9rem;
     }
+    
 
     #desktop-nav {
         display: none; 
