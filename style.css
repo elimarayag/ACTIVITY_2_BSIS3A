@@ -41,6 +41,7 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: space-between;
 }
 
 .nav-links li {
@@ -164,7 +165,6 @@ a:hover {
   align-items: center;
 }
 
-/* Style for home content */
 .home-content {
     display: flex;
     flex-direction: row;
@@ -192,7 +192,6 @@ a:hover {
     text-align: left;
 }
 
-
 .description h1 {
     font-size: 2rem;
     color: rgb(128, 43, 177);
@@ -207,60 +206,79 @@ a:hover {
 
 /* section genre*/
 #genre {
-    margin: 50px auto;
-    overflow: hidden;
-    position: relative; 
-    margin-bottom: 0;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative; 
+  margin-bottom: 0;
 }
 
-.genre-title {
+.genre-title-container {
+  background-color: #802BB1; 
+  text-align: center; 
   color: rgb(209,215,224);
-  position: absolute;
-  text-align: center;
-  margin-bottom: 60px;
+  font-size: 1; 
+  position: absolute; 
+  width: 200%; 
+  top: 0; /* Place it at the top */
+  overflow: hidden;
+}
+
+.animated-text {
+  animation: moveLeft 10s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes moveLeft {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
 }
 
 .genre-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative; /* Set the genre container to relative positioning */
 }
 
 .genre-slides {
-    display: flex;
-    transition: transform 0.5s;
+  display: flex;
+  transition: transform 0.5s;
 }
 
 .genre-slide {
-    flex: 0 0 100%;
-    max-width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .genre-slide img {
-    width: 90%;
-    height: 70%; 
-    margin-top: 70px;
-    }
+  width: 90%;
+  height: 70%; 
+  margin-top: 70px;
+}
 
 .arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
-    padding: 5px 5px;
-    border: none;
-    z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  z-index: 1;
 }
 
 .prev {
-    left: 0;
+  left: 0;
 }
 
 .next {
-    right: 0;
+  right: 0;
 }
 
 /*About section*/
@@ -317,6 +335,62 @@ h2 {
 
 .github-button:hover {
     background-color: #9553b6;
+}
+
+/*contact section*/
+
+#contact {
+  background-color: #D1D7E0;
+  text-align: center;
+  padding: 50px 0;
+  border-radius: 50px;
+  height: 60vh;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  color: rgb(128, 43, 177);
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+button {
+  background-color: rgb(128, 43, 177);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #9553b6;
 }
 
 

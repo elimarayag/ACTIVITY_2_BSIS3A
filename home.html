@@ -14,6 +14,7 @@
             <li><a href="#home-section">Home</a></li>
             <li><a href="#genre">Genre</a></li>
             <li><a href="#about-content">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <nav id="hamburger-nav">
@@ -28,6 +29,7 @@
                 <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
                 <li><a href="#genre" onclick="toggleMenu()">Genre</a></li>
                 <li><a href="#about-content" onclick="toggleMenu()">About</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
             </ul>
         </div>
     </nav>
@@ -44,7 +46,9 @@
         </div>
     </section>   
     <section id="genre">
-        <h1 class="genre-title">Explore the artists of your favorite genre!</h1>
+        <div class="genre-title-container">
+            <h1 class="genre-title animated-text">Explore the artists of your favorite genre!</h1>
+        </div>
         <div class="genre-container">
             <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
             <div class="genre-slides">
@@ -60,7 +64,7 @@
             </div>
             <button class="arrow next" onclick="nextSlide()">&#10095;</button>
         </div>
-    </section>
+    </section>        
     <section id="about-content">
         <div class="team-member">
             <div class="member-photo">
@@ -89,13 +93,35 @@
                 <a class="github-button" href="https://github.com/raffyroad" target="_blank">GitHub</a>
             </div>
         </div>
-    </section>      
+    </section> 
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, please feel free to contact us.</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>   
     <footer>
         <nav class="footer-nav">
           <ul class="nav-links">
             <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
             <li><a href="#genre" onclick="toggleMenu()">Genre</a></li>
             <li><a href="#about-content" onclick="toggleMenu()">About</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </ul>
         </nav>
         <p>Copyright &#169; 2023. All Rights Reserved.</p>
