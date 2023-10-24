@@ -205,21 +205,16 @@ a:hover {
 
 
 /* section genre*/
-#genre {
-  margin: 50px auto;
-  overflow: hidden;
-  position: relative; 
-  margin-bottom: 0;
+
+#title {
+  position: relative;
 }
 
 .genre-title-container {
   background-color: #802BB1; 
   text-align: center; 
   color: rgb(209,215,224);
-  font-size: 1; 
-  position: absolute; 
-  width: 200%; 
-  top: 0; /* Place it at the top */
+  font-size: 1 rem;  
   overflow: hidden;
 }
 
@@ -235,6 +230,13 @@ a:hover {
   100% {
       transform: translateX(-100%);
   }
+}
+
+#genre {
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative; 
+  margin-bottom: 0;
 }
 
 .genre-container {
