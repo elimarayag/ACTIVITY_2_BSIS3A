@@ -9,15 +9,13 @@
   <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
 </head>
 <body>
-  <nav id="back-btn-nav">
-    <div class="back-btn-container">
-      <img src="./assets/back-btn.png" alt="Back Button" 
-      class="back-btn" onclick="location.href='index.html'">
-    </div>
-  </nav>
   <section id="artist-info">
     <div class="artist-info-container">
       <div class="artist-profile-container">
+        <div class="back-btn-container">
+          <img src="./assets/back-btn.png" alt="Back Button" 
+          class="back-btn" onclick="location.href='index.html'">
+        </div>
         <div class="artist-pic-container">
           <img src="./assets/dua-lipa.jpg" 
           alt="Billie Eilish" class="artist-pic">
@@ -37,7 +35,7 @@
           <p>Popular Albums:</p>
         </div>
         <div class="album-container">
-          <div class="album-details-container">
+          <a href="#overlay" class="album-details-container">
             <div class="album-pic-container">
               <img src="./assets/dl-album-1.jpg" 
               alt="Don't Smile at Me" class="album-pic">
@@ -45,18 +43,8 @@
             <div class="album-name-container">
               <p class="album-name">Future Nostalgia</p>
             </div>
-            <div class="album-btn-container">
-              <button class="btn"
-              onclick="window.open('https://open.spotify.com/album/5lKlFlReHOLShQKyRv6AL9')">
-              Spotify
-              </button>
-              <button class="btn"
-              onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_mqO_kf7YFPjbtEU3FYSILA-IZtxv_NrKQ')">
-              Youtube
-              </button>
-            </div>
-          </div>
-          <div class="album-details-container">
+          </a>
+          <a href="#overlay-2" class="album-details-container">
             <div class="album-pic-container">
               <img src="./assets/dl-album-2.jpg" 
               alt="Don't Smile at Me" class="album-pic">
@@ -64,18 +52,8 @@
             <div class="album-name-container">
               <p class="album-name">The Moonlight Edition</p>
             </div>
-            <div class="album-btn-container">
-              <button class="btn"
-              onclick="window.open('https://open.spotify.com/album/5lKlFlReHOLShQKyRv6AL9')">
-              Spotify
-              </button>
-              <button class="btn"
-              onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_mJyhJmOZu2SzoOQ-HcEhjeNJKloF9ZWJY')">
-              Youtube
-              </button>
-            </div>
-          </div>
-          <div class="album-details-container">
+          </a>
+          <a href="#overlay-3" class="album-details-container">
             <div class="album-pic-container">
               <img src="./assets/dl-album-3.png" 
               alt="Don't Smile at Me" class="album-pic">
@@ -83,17 +61,7 @@
             <div class="album-name-container">
               <p class="album-name">Dua Lipa</p>
             </div>
-            <div class="album-btn-container">
-              <button class="btn"
-              onclick="window.open('https://open.spotify.com/album/0obMz8EHnr3dg6NCUK4xWp')">
-              Spotify
-              </button>
-              <button class="btn"
-              onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_lcO9niZkVWp1fsBhYRlaCwi0nTSX-t2oM')">
-              Youtube
-              </button>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -224,4 +192,276 @@
       </div>
     </div>
   </section>
+  <a href="#artist-info" id="overlay">
+    <div class="album-popup">
+      <div class="popup-cover">
+        <img src="./assets/dl-album-1.jpg" 
+        alt="Album Cover" class="album-cover">
+        <p class="album-title">
+          Future Nostalgia
+        </p>
+        <div class="album-details">
+          <p class="album-contents">2020</p>
+          <p class="album-contents">11 songs</p>
+          <p class="album-contents">37 min 23 sec</p>
+        </div>
+        <div class="album-btn-container">
+          <button class="btn"
+          onclick="window.open('https://open.spotify.com/album/5lKlFlReHOLShQKyRv6AL9')">
+          Spotify
+          </button>
+          <button class="btn"
+          onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_mqO_kf7YFPjbtEU3FYSILA-IZtxv_NrKQ')">
+          Youtube
+          </button>
+        </div>
+      </div>
+      <div class="popup-songs">
+        <div class="album-song">
+          <p class="title">Future Nostalgia</p>
+          <p class="time">3:04</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Don't Start Now</p>
+          <p class="time">3:03</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Cool</p>
+          <p class="time">3:29</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Physical</p>
+          <p class="time">3:13</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Levitating</p>
+          <p class="time">3:23</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Pretty Please</p>
+          <p class="time">3:14</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Hallucinate</p>
+          <p class="time">3:28</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Love Again</p>
+          <p class="time">4:18</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Break My Heart</p>
+          <p class="time">3:41</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Good in Bed</p>
+          <p class="time">3:38</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Boys Will Be Boys</p>
+          <p class="time">2:46</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="#artist-info" id="overlay-2">
+    <div class="album-popup-2">
+      <div class="popup-cover">
+        <img src="./assets/dl-album-2.jpg" 
+        alt="Album Cover" class="album-cover">
+        <p class="album-title">
+          The Moonlight Edition
+        </p>
+        <div class="album-details">
+          <p class="album-contents">2021</p>
+          <p class="album-contents">19 songs</p>
+          <p class="album-contents">1 hr 1 min</p>
+        </div>
+        <div class="album-btn-container">
+          <button class="btn"
+          onclick="window.open('https://open.spotify.com/album/5lKlFlReHOLShQKyRv6AL9')">
+          Spotify
+          </button>
+          <button class="btn"
+          onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_mJyhJmOZu2SzoOQ-HcEhjeNJKloF9ZWJY')">
+          Youtube
+            </button>
+        </div>
+      </div>
+      <div class="popup-songs">
+        <div class="album-song">
+          <p class="title">Future Nostalgia</p>
+          <p class="time">3:04</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Don't Start Now</p>
+          <p class="time">3:03</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Cool</p>
+          <p class="time">3:29</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Physical</p>
+          <p class="time">3:13</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Levitating</p>
+          <p class="time">3:23</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Pretty Please</p>
+          <p class="time">3:14</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Hallucinate</p>
+          <p class="time">3:28</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Love Again</p>
+          <p class="time">4:18</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Break My Heart</p>
+          <p class="time">3:41</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Good in Bed</p>
+          <p class="time">3:38</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Boys Will Be Boys</p>
+          <p class="time">2:46</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Fever</p>
+          <p class="time">2:36</p>
+        </div>
+        <div class="album-song">
+          <p class="title">We're Good</p>
+          <p class="time">2:45</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Prisoner (ft. Dua Lipa)</p>
+          <p class="time">2:49</p>
+        </div>
+        <div class="album-song">
+          <p class="title">If It Ain't Me</p>
+          <p class="time">3:15</p>
+        </div>
+        <div class="album-song">
+          <p class="title">That Kind of Woman</p>
+          <p class="time">3:20</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Not My Problem (ft. JID)</p>
+          <p class="time">2:23</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Levitating (ft. DaBaby)</p>
+          <p class="time">3:23</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Un Dia (One Day)</p>
+          <p class="time">3:51</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="#artist-info" id="overlay-3">
+    <div class="album-popup-3">
+      <div class="popup-cover">
+        <img src="./assets/dl-album-2.jpg" 
+        alt="Album Cover" class="album-cover">
+        <p class="album-title">
+          Dua Lipa
+        </p>
+        <div class="album-details">
+          <p class="album-contents">2017</p>
+          <p class="album-contents">17 songs</p>
+          <p class="album-contents">1 hr</p>
+        </div>
+        <div class="album-btn-container">
+          <button class="btn"
+          onclick="window.open('https://open.spotify.com/album/0obMz8EHnr3dg6NCUK4xWp')">
+          Spotify
+          </button>
+          <button class="btn"
+          onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_lcO9niZkVWp1fsBhYRlaCwi0nTSX-t2oM')">
+          Youtube            
+          </button>
+        </div>
+      </div>
+      <div class="popup-songs">
+        <div class="album-song">
+          <p class="title">Genises</p>
+          <p class="time">3:25</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Lost In Your Light</p>
+          <p class="time">3:23</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Hotter Than Hell</p>
+          <p class="time">3:07</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Be The One</p>
+          <p class="time">3:22</p>
+        </div>
+        <div class="album-song">
+          <p class="title">IDGAF</p>
+          <p class="time">3:37</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Blow Your Mind (Mwah)</p>
+          <p class="time">2:58</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Garden</p>
+          <p class="time">3:47</p>
+        </div>
+        <div class="album-song">
+          <p class="title">No Goodbyes</p>
+          <p class="time">3:36</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Thinking 'Bout You</p>
+          <p class="time">2:51</p>
+        </div>
+        <div class="album-song">
+          <p class="title">New rules</p>
+          <p class="time">3:29</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Begging</p>
+          <p class="time">3:14</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Homesick</p>
+          <p class="time">3:50</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Dreams</p>
+          <p class="time">3:40</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Room for 2</p>
+          <p class="time">3:28</p>
+        </div>
+        <div class="album-song">
+          <p class="title">New Love</p>
+          <p class="time">4:31</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Bad Together</p>
+          <p class="time">3:58</p>
+        </div>
+        <div class="album-song">
+          <p class="title">Last Dance</p>
+          <p class="time">3:48</p>
+        </div>
+      </div>
+    </div>
+  </a>
 </body>
