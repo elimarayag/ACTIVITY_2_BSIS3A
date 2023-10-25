@@ -1,105 +1,185 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Music Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo"><img src="./assets/kemelogo.png" alt="logo"></div>
-        <ul class="nav-links">
-            <li><a href="#home-section">Home</a></li>
-            <li><a href="#genre">Genre</a></li>
-            <li><a href="#about-content">About</a></li>
-        </ul>
+      <div class="logo"><img src="./assets/kemelogo.png" alt="logo" /></div>
+      <ul class="nav-links">
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#genre">Genre</a></li>
+        <li><a href="#about-content">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo"><img src="./assets/kemelogo.png" alt="logo"></div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="menu-links">
-                <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
-                <li><a href="#genre" onclick="toggleMenu()">Genre</a></li>
-                <li><a href="#about-content" onclick="toggleMenu()">About</a></li>
-            </ul>
+      <div class="logo"><img src="./assets/kemelogo.png" alt="logo" /></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <ul class="menu-links">
+          <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#genre" onclick="toggleMenu()">Genre</a></li>
+          <li><a href="#about-content" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+        </ul>
+      </div>
     </nav>
     <section id="home-section">
-        <div class="home-content">
-            <div class="photo">
-                <img src="./assets/home.jpg" alt="home photo">
-            </div>
-            <div class="description">
-                <h1>Welcome</h1>
-                <p>Explore a world of music genres and get to know your favorite artists. 
-                   From Pop to Rock and everything in between, we've got it all covered.</p>
-            </div>
+      <div class="home-content">
+        <div class="photo">
+          <img src="./assets/home.jpg" alt="home photo" />
         </div>
-    </section>   
+        <div class="description">
+          <h1>Welcome</h1>
+          <p>
+            Explore a world of music genres and get to know your favorite
+            artists. From Pop to Rock and everything in between, we've got it
+            all covered.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="title">
+      <div class="genre-title-container">
+        <h1 class="genre-title animated-text">
+          Explore the artists of your favorite genre!
+        </h1>
+      </div>
+    </section>
     <section id="genre">
-        <h1 class="genre-title">Explore the artists of your favorite genre!</h1>
-        <div class="genre-container">
-            <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
-            <div class="genre-slides">
-                <div class="genre-slide">
-                    <img src="./assets/pop.png" alt="pop">
-                </div>
-                <div class="genre-slide">
-                    <img src="./assets/rnb.png" alt="r&b">
-                </div>
-                <div class="genre-slide">
-                    <img src="./assets/rock.png" alt="rock">
-                </div>
+      <div class="genre-container">
+        <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
+        <div class="genre-slides">
+          <div class="genre-slide">
+            <img src="./assets/pop.png" alt="pop" />
+            <div class="genre-description">
+              Pop Music <br />
+              A genre of popular music that originated in the West during the
+              1950s and 1960s. Pop music is eclectic, often borrowing elements
+              from urban, dance, rock, Latin, country, and other styles. Songs
+              are typically short to medium-length with repeated choruses,
+              melodic tunes, and hooks.
             </div>
-            <button class="arrow next" onclick="nextSlide()">&#10095;</button>
+          </div>
+          <div class="genre-slide">
+            <img src="./assets/rnb.png" alt="r&b" />
+            <div class="genre-description">
+              R&B <br />
+              Rhythm and blues, commonly known as R&B, is a musical genre
+              developed by Black Americans in the 1940s that has been
+              continuously refined through the present day. Contemporary R&B is
+              often driven by keyboards, synthesizers, sstrong bass lines, and
+              looped drum beats.
+            </div>
+          </div>
+          <div class="genre-slide">
+            <img src="./assets/rock.png" alt="rock" />
+            <div class="genre-description">
+              Rock <br />
+              A genre of popular music that originated as "rock and roll" in the
+              United States in the 1950s, and developed into a range of
+              different styles in the 1960s and later. Compared to pop music,
+              rock places a higher degree of emphasis on musicianship, live
+              performance, and an ideology of authenticity.
+            </div>
+          </div>
         </div>
+        <button class="arrow next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </section>
+    <section id="about-title">
+      <div class="genre-title-container">
+        <h1 class="genre-title animated-text">Get to Know us!</h1>
+      </div>
     </section>
     <section id="about-content">
-        <div class="team-member">
-            <div class="member-photo">
-                <img src="./assets/keme.jpg" alt="team">
-            </div>
-            <div class="member-info">
-                <h2>Jude</h2>
-                <a class="github-button" href="https://github.com/JudeBanar" target="_blank">GitHub</a>
-            </div>
+      <div class="team-member">
+        <div class="member-photo">
+          <img src="./assets/keme.jpg" alt="team" />
         </div>
-        <div class="team-member">
-            <div class="member-photo">
-                <img src="./assets/sample1.jpg" alt="team">
-            </div>
-            <div class="member-info">
-                <h2>Elisha</h2>
-                <a class="github-button" href="https://github.com/elimarayag" target="_blank">GitHub</a>
-            </div>
+        <div class="member-info">
+          <h2>Jude</h2>
+          <a
+            class="github-button"
+            href="https://github.com/JudeBanar"
+            target="_blank"
+            >GitHub</a
+          >
         </div>
-        <div class="team-member">
-            <div class="member-photo">
-                <img src="./assets/sample2.jpg" alt="team">
-            </div>
-            <div class="member-info">
-                <h2>Martin</h2>
-                <a class="github-button" href="https://github.com/raffyroad" target="_blank">GitHub</a>
-            </div>
+      </div>
+      <div class="team-member">
+        <div class="member-photo">
+          <img src="./assets/sample1.jpg" alt="team" />
         </div>
-    </section>      
+        <div class="member-info">
+          <h2>Elisha</h2>
+          <a
+            class="github-button"
+            href="https://github.com/elimarayag"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="member-photo">
+          <img src="./assets/sample2.jpg" alt="team" />
+        </div>
+        <div class="member-info">
+          <h2>Martin</h2>
+          <a
+            class="github-button"
+            href="https://github.com/raffyroad"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Get in touch with us</h2>
+        <p>
+          If you have any questions or need assistance, please feel free to
+          contact us.
+        </p>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
     <footer>
-        <nav class="footer-nav">
-          <ul class="nav-links">
-            <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#genre" onclick="toggleMenu()">Genre</a></li>
-            <li><a href="#about-content" onclick="toggleMenu()">About</a></li>
-          </ul>
-        </nav>
-        <p>Copyright &#169; 2023. All Rights Reserved.</p>
-      </footer>      
-      <script src="script.js"></script>
-</body>
+      <nav class="footer-nav">
+        <ul class="nav-links">
+          <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#genre" onclick="toggleMenu()">Genre</a></li>
+          <li><a href="#about-content" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &#169; 2023. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
