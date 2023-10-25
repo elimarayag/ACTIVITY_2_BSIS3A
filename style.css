@@ -1,6 +1,6 @@
 /* style.css */
 body {
-  background-image: url('./assets/body.jpg');
+  background-image: url("./assets/body.jpg");
   text-align: center;
   margin: 0;
   padding: 0;
@@ -9,63 +9,62 @@ body {
 
 @keyframes backgroundSlide {
   0% {
-      background-position: 0% 0%;
+    background-position: 0% 0%;
   }
   100% {
-      background-position: 100% 0%;
+    background-position: 100% 0%;
   }
-
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* desktop-nav */
 #desktop-nav {
-    background-color: rgb(45,40,62);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100; 
+  background-color: rgb(45, 40, 62);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 40 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 40 20px;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav-links li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 a {
-    color: rgb(209,215,224);
-    text-shadow: 0px 0px 20px rgb(255, 255, 255);
-    text-decoration: none;
-    text-decoration-color: white;
-    font-size: 1.5rem;
+  color: rgb(209, 215, 224);
+  text-shadow: 0px 0px 20px rgb(255, 255, 255);
+  text-decoration: none;
+  text-decoration-color: white;
+  font-size: 1.5rem;
 }
 
 a:hover {
-    color: white;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: white;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: white;
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 
 .logo {
@@ -101,7 +100,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: rgb(128,43,177);
+  background-color: rgb(128, 43, 177);
   transition: all 0.3 ease-in-out;
 }
 
@@ -120,7 +119,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: rgb(128,43,177);
+  color: rgb(128, 43, 177);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -206,7 +205,7 @@ a:hover {
 
 /* section genre */
 #title {
-  background-color: #802BB1;
+  background-color: #802bb1;
   text-align: center;
   height: 10vh;
   display: flex;
@@ -237,7 +236,7 @@ a:hover {
 
 #genre {
   padding-top: 30px;
-  margin: 20px auto; 
+  margin: 20px auto;
   overflow: hidden;
   position: relative;
 }
@@ -267,10 +266,10 @@ a:hover {
 .genre-slide .genre-description {
   display: none;
   position: absolute;
-  top: 50%; 
-  left: 50%; 
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  color: #D1D7E0;
+  color: #d1d7e0;
   background: rgba(0, 0, 0, 0.7);
   padding: 5px;
   font-size: 2rem;
@@ -305,7 +304,7 @@ a:hover {
 
 /*about section */
 #about-title {
-  background-color: #802BB1;
+  background-color: #802bb1;
   text-align: center;
   height: 10vh;
   display: flex;
@@ -318,20 +317,20 @@ a:hover {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  margin-top: 0px; 
+  margin-top: 0px;
 }
 .about-image img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-around;
   padding: 20px;
 }
 
 .section-title {
-text-align: center;
-margin: 0 auto;
-display: table;
+  text-align: center;
+  margin: 0 auto;
+  display: table;
 }
 
 .team-member {
@@ -366,7 +365,7 @@ h2 {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgb(128, 43, 177);
-  color: #D1D7E0;
+  color: #d1d7e0;
   text-decoration: none;
   border-radius: 20px;
   margin-top: 10px;
@@ -379,7 +378,7 @@ h2 {
 /*contact section*/
 
 #contact {
-  background-color: #D1D7E0;
+  background-color: #d1d7e0;
   text-align: center;
   padding: 50px 0;
   border-radius: 50px;
@@ -433,7 +432,6 @@ button:hover {
   background-color: #9553b6;
 }
 
-
 /* Footer Section */
 
 footer {
@@ -462,7 +460,7 @@ footer {
 
 .footer-nav a {
   text-decoration: none;
-  color: rgb(209,215,224);
+  color: rgb(209, 215, 224);
   font-size: 1.5rem;
   transition: color 0.3s;
 }
@@ -471,19 +469,270 @@ footer {
   color: white;
 }
 
-/*Pop Artists HTML*/
+/*Pop HTML*/
 
-#back-btn-nav {
+.menu li {
+  padding-left: 0 !important;
+}
+
+.playlists {
+  font-weight: 400 !important;
+}
+
+.playlists ul li a span {
+  left: 0px;
+}
+
+.current-song-cover img {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  left: 0;
+}
+
+.container {
   display: flex;
-  position: fixed;
-  padding-left: 3rem;
-  padding-top: 1rem;
-} 
+  flex-direction: row;
+  height: calc(100vh - var(--footer-height)) !important;
+}
+
+.right {
+  width: 100%;
+  background-color: #1c1b25;
+}
+
+.arrow-container {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #434343;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-arrows {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-container {
+  margin-right: 15px !important;
+}
+
+.playlist-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playlist-header {
+  padding: 20px;
+}
+
+.playlist-top-email {
+  display: flex;
+  align-items: center;
+  background-color: #434343;
+  border-radius: 20px;
+  color: white;
+}
+
+.playlist-header .arrow-container {
+  background-color: #535353;
+  margin: 2px;
+}
+
+.playlist-top-email span {
+  padding: 0 10px;
+}
+
+.playlist-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.playlist-info {
+  color: white;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.playlist-title {
+  font-size: 86px;
+  font-weight: 700;
+
+  margin-top: 10px;
+  font-family: "Futura PT", sans-serif;
+}
+
+.playlist-description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #b5b5b5;
+}
+
+.playlist-stats img {
+  position: relative;
+  top: 6px;
+}
+
+.playlist-stats span:first-of-type {
+  font-weight: 1000;
+  font-family: "Futura PT", sans-serif;
+}
+
+.playlist-stats img {
+  position: relative;
+  top: 6px;
+}
+
+.playlist-stats span:first-of-type {
+  font-weight: 1000;
+  font-family: "Futura PT", sans-serif;
+}
+
+.footer-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #181818;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: var(--footer-height);
+}
+
+.footer-player-left-like svg path {
+  fill: var(--spotify-green);
+}
+.footer-player-left-like {
+  padding-left: 30px;
+}
+
+.footer-player-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-player-middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-player-middle-buttons img {
+  width: 15px;
+  padding: 15px;
+}
+
+.footer-player-middle-buttons,
+.footer-player-middle-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.playlist-songs-container {
+  height: 800px;
+  padding: 20px;
+  justify-content: center;
+  background: #2d2a40;
+  background: linear-gradient (180deg, #2d2a40 0%, #2d2a40 22%, #2d2a40 100%);
+}
+
+.spotify-playlists {
+  padding: 20px 40px;
+}
+.spotify-playlists h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 100px;
+}
+.spotify-playlists .list {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  overflow: hidden;
+}
+.spotify-playlists .list .item {
+  min-width: 140px;
+  width: 160px;
+  padding: 15px;
+  background-color: #252525;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover {
+  background-color: rgb(209, 215, 224);
+}
+.spotify-playlists .list .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.spotify-playlists .list .item .play {
+  position: relative;
+}
+.spotify-playlists .list .item .play .fa {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #8746ae;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+.spotify-playlists .list .item h4 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spotify-playlists .list .item h4:hover {
+  color: #000000;
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spotify-playlists .list .item p {
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.spotify-playlists hr {
+  margin: 70px 0px 0px;
+  border-color: #636363;
+}
+
+/*Pop Artists HTML*/
 
 .back-btn {
   height: 3rem;
   width: auto;
   border-radius: 1.5rem;
+}
+
+.back-btn-container {
+  position: absolute;
+  margin: 3rem;
 }
 
 .back-btn:hover {
@@ -495,18 +744,19 @@ footer {
 
 /*Artist Info Section*/
 
-#artist-info{
+#artist-info {
   display: flex;
   height: 90vh;
-  background: #2D283E;
-  font-family: 'Futura PT', sans-serif;
+  background: #2d283e;
+  font-family: "Futura PT", sans-serif;
+  position: fixed;
 }
 
 .artist-info-container {
   display: flex;
 }
 
-.artist-profile-container{
+.artist-profile-container {
   display: flex;
 }
 
@@ -547,8 +797,8 @@ footer {
 .album-details-container {
   justify-content: center;
   align-items: center;
-  background-color: #D1D7E0;
-  height: 42.5vh;
+  background-color: #d1d7e0;
+  height: 35vh;
   width: 30vh;
   border-radius: 20px;
 }
@@ -556,6 +806,7 @@ footer {
 .album-details-container:hover {
   box-shadow: 0px 0px 10px rgb(255, 255, 255);
   transition: all 300ms ease;
+  text-decoration: none;
 }
 
 .album-pic-container {
@@ -582,12 +833,125 @@ footer {
   margin-bottom: 10px;
   font-weight: bold;
   text-align: center;
+  font-size: 17px;
 }
 
 .album-btn-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#overlay,
+#overlay-2,
+#overlay-3 {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 300ms;
+  color: white;
+  font-family: "Futura PT", sans-serif;
+}
+
+#overlay:target,
+#overlay-2:target,
+#overlay-3:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.album-popup,
+.album-popup-2,
+.album-popup-3 {
+  position: absolute;
+  display: flex;
+  position: fixed;
+  background: #2d283e;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  border-radius: 20px;
+  height: 30rem;
+  width: 45rem;
+  transition: all 300ms ease-in-out;
+  padding: 0;
+}
+
+.album-popup-2 {
+  height: 35rem;
+}
+
+.album-popup-3 {
+  height: 38rem;
+}
+
+.back-popup {
+  display: flex;
+  height: 30px;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+}
+
+.back-popup:hover {
+  cursor: pointer;
+  border-radius: 1.5rem;
+  box-shadow: 0px 0px 10px white;
+  transition: all 300ms ease;
+}
+
+.popup-cover {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.album-cover {
+  height: 15rem;
+  border-radius: 20px;
+}
+
+.album-title {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.album-details {
+  font-size: 15px;
+  font-weight: normal;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0;
+  justify-content: center;
+}
+
+.album-contents {
+  margin: 0;
+}
+
+.album-song {
+  display: flex;
+  gap: 5rem;
+  height: 2rem;
+}
+
+.title,
+.time {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 15px;
+}
+
+.title {
+  width: 12rem;
 }
 
 .btn {
@@ -595,32 +959,35 @@ footer {
   border: none;
   height: 2rem;
   width: 4.5rem;
-  background: #802BB1;
+  background: #802bb1;
   border-radius: 1rem;
   font-weight: bold;
-  font-family: 'Futura PT', sans-serif;
+  font-family: "Futura PT", sans-serif;
 }
 
 .btn:hover {
-  border-color: #802BB1;
+  border-color: #802bb1;
   background: none;
-  color: #802BB1;
+  color: #802bb1;
   transition: all 300ms ease;
   font-weight: bold;
 }
-
 
 /*Song List Section*/
 
 #songs-list-container {
   display: flex;
-  background-color: #4C495D;
+  background-color: #4c495d;
   color: white;
   justify-content: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
   height: 110vh;
-  font-family: 'Futura PT', sans-serif
+  font-family: "Futura PT", sans-serif;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  position: absolute;
+  margin-top: 85vh;
+  width: 100%;
+  box-shadow: 0px 0px 30px black;
 }
 
 .song-container {
@@ -629,7 +996,7 @@ footer {
   display: flex;
   gap: 11rem;
   margin-top: 1.5rem;
-  background-color: #D1D7E0;
+  background-color: #d1d7e0;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -638,7 +1005,7 @@ footer {
 }
 
 .song-container:hover {
-  background-color: #802BB1;
+  background-color: #802bb1;
   color: white;
   box-shadow: 0px 0px 10px black;
   transition: all 300ms ease;
@@ -664,7 +1031,7 @@ footer {
 .song-btn {
   display: flex;
   height: 2rem;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 .song-btn:hover {
