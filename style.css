@@ -1,73 +1,70 @@
 /* style.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color:rgb(45,40,62) ;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    animation: backgroundSlide 20s linear infinite;
+  background-image: url("./assets/body.jpg");
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  animation: backgroundSlide 20s linear infinite;
 }
 
 @keyframes backgroundSlide {
   0% {
-      background-position: 0% 0%;
+    background-position: 0% 0%;
   }
   100% {
-      background-position: 100% 0%;
+    background-position: 100% 0%;
   }
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* desktop-nav */
 #desktop-nav {
-    background-color: rgb(45,40,62);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100; 
+  background-color: rgb(45, 40, 62);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 40 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 40 20px;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav-links li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 a {
-    color: rgb(209,215,224);
-    text-shadow: 0px 0px 20px rgb(255, 255, 255);
-    color: rgb(209,215,224);
-    text-shadow: 0px 0px 20px rgb(255, 255, 255);
-    text-decoration: none;
-    text-decoration-color: white;
-    font-size: 1.5rem;
+  color: rgb(209, 215, 224);
+  text-shadow: 0px 0px 20px rgb(255, 255, 255);
+  text-decoration: none;
+  text-decoration-color: white;
+  font-size: 1.5rem;
 }
 
 a:hover {
-    color: white;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: white;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: white;
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 
 .logo {
@@ -78,7 +75,6 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
-
 
 /* Hamburger Menu */
 
@@ -98,13 +94,13 @@ a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: rgb(128,43,177);
-  background-color: rgb(128,43,177);
+  background-color: rgb(128, 43, 177);
   transition: all 0.3 ease-in-out;
 }
 
@@ -123,7 +119,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: rgb(128,43,177);
+  color: rgb(128, 43, 177);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -166,147 +162,228 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
 }
 
-/* Style for home content */
 .home-content {
-    display: flex;
-    flex-direction: row;
-    max-width: 1200px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    flex-direction: row-reverse; /* Reverses the order of the items */
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  flex-direction: row-reverse; /* Reverses the order of the items */
 }
 
 .photo {
-    flex: 1;
-    padding: 20px;
-    order: 2;
-    display: flex;
-    height: 300px;
-    width: 300px;
-    margin: auto 0;
+  flex: 1;
+  padding: 20px;
+  order: 2;
+  display: flex;
+  height: 300px;
+  width: 300px;
+  margin: auto 0;
 }
 
 .description {
-    flex: 1;
-    padding: 20px;
-    order: 1;
-    text-align: left;
+  flex: 1;
+  padding: 20px;
+  order: 1;
+  text-align: left;
 }
 
-
 .description h1 {
-    font-size: 2rem;
-    color: rgb(128, 43, 177);
+  font-size: 2rem;
+  color: rgb(128, 43, 177);
 }
 
 .description p {
-    padding-left: 5px;
-    font-size: 1.2rem;
-    color: #333;
+  padding-left: 5px;
+  font-size: 1.2rem;
+  color: #333;
 }
 
+/* section genre */
+#title {
+  background-color: #802bb1;
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* section genre*/
-#genre {
-  margin: 50px auto;
+.genre-title-container {
+  color: rgb(209, 215, 224);
+  position: relative;
   overflow: hidden;
-  position: relative; 
-  margin-bottom: 0;
 }
 
 .genre-title {
-  color: rgb(209,215,224);
-  color: rgb(209,215,224);
-  position: absolute;
-  text-align: center;
-  margin-bottom: 60px;
+  display: inline-block;
+  animation: slideLeft 10s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#genre {
+  padding-top: 30px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .genre-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .genre-slides {
-    display: flex;
-    transition: transform 0.5s;
+  display: flex;
 }
 
 .genre-slide {
-    flex: 0 0 100%;
-    max-width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
 }
 
 .genre-slide img {
-    width: 90%;
-    height: 70%; 
-    margin-top: 70px;
-    }
+  width: 90%;
+  height: 80%;
+  margin-top: 5px;
+}
+
+.genre-slide .genre-description {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d1d7e0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  font-size: 2rem;
+  z-index: 2;
+  transition: opacity 0.3s;
+}
+
+.genre-slide:hover .genre-description {
+  display: block;
+}
 
 .arrow {
-    cursor: pointer;
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
-    padding: 5px 5px;
-    border: none;
-    z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  z-index: 1;
 }
 
 .prev {
-    left: 0;
+  left: 0;
 }
 
 .next {
-    right: 0;
+  right: 0;
 }
 
-/*About section*/
+/*about section */
+#about-title {
+  background-color: #802bb1;
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
 
 #about-content {
-    padding: 50px;
-    text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 0px;
+}
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: rgb(209, 215, 224);
+  margin: 5px;
+}
+
+.member-photo img {
+  border-radius: 15%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin: 0 auto 10px;
+}
+
+.member-info {
+  padding: 20px;
+  text-align: center;
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin: 0;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 .github-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgb(128, 43, 177);
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(128, 43, 177);
+  color: #d1d7e0;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 10px;
 }
 
 .github-button:hover {
-    background-color: #9553b6;
-    color: rgb(249, 199, 79)
-}
-
-.github-button:hover {
-    background-color: #9553b6;
+  background-color: #9553b6;
 }
 
 /*contact section*/
 
 #contact {
-  background-color: #D1D7E0;
+  background-color: #d1d7e0;
   text-align: center;
   padding: 50px 0;
   border-radius: 50px;
   height: 60vh;
+  margin-top: 50px;
 }
 
 .contact-container {
@@ -355,7 +432,6 @@ button:hover {
   background-color: #9553b6;
 }
 
-
 /* Footer Section */
 
 footer {
@@ -384,8 +460,7 @@ footer {
 
 .footer-nav a {
   text-decoration: none;
-  color: rgb(209,215,224);
-  color: rgb(209,215,224);
+  color: rgb(209, 215, 224);
   font-size: 1.5rem;
   transition: color 0.3s;
 }
@@ -393,6 +468,7 @@ footer {
 .footer-nav a:hover {
   color: white;
 }
+
 /*Pop HTML*/
 
 .menu li {
@@ -407,8 +483,6 @@ footer {
   left: 0px;
 }
 
-
-
 .current-song-cover img {
   position: absolute;
   width: 100%;
@@ -416,19 +490,16 @@ footer {
   left: 0;
 }
 
-
 .container {
   display: flex;
   flex-direction: row;
   height: calc(100vh - var(--footer-height)) !important;
 }
 
-
 .right {
   width: 100%;
-  background-color:#1c1b25
+  background-color: #1c1b25;
 }
-
 
 .arrow-container {
   border-radius: 50%;
@@ -440,15 +511,13 @@ footer {
   align-items: center;
 }
 
-.playlist-arrows  {
+.playlist-arrows {
   display: flex;
   align-items: center;
-  
 }
 
 .arrow-container {
   margin-right: 15px !important;
-  
 }
 
 .playlist-top {
@@ -458,9 +527,7 @@ footer {
 }
 
 .playlist-header {
-  padding: 20px
-  
-
+  padding: 20px;
 }
 
 .playlist-top-email {
@@ -468,7 +535,7 @@ footer {
   align-items: center;
   background-color: #434343;
   border-radius: 20px;
-  color:white;
+  color: white;
 }
 
 .playlist-header .arrow-container {
@@ -480,7 +547,6 @@ footer {
   padding: 0 10px;
 }
 
-
 .playlist-content {
   display: flex;
   flex-direction: row;
@@ -488,10 +554,8 @@ footer {
   margin-top: 20px;
 }
 
-
-
 .playlist-info {
-  color:white;
+  color: white;
   padding-left: 20px;
   align-items: center;
 }
@@ -499,46 +563,46 @@ footer {
 .playlist-title {
   font-size: 86px;
   font-weight: 700;
-  
+
   margin-top: 10px;
-  font-family: 'Futura PT', sans-serif;
+  font-family: "Futura PT", sans-serif;
 }
 
 .playlist-description {
   font-size: 18px;
   font-weight: 400;
   margin-top: 20px;
-  color:#B5B5B5;
+  color: #b5b5b5;
 }
 
-.playlist-stats  img{
+.playlist-stats img {
   position: relative;
   top: 6px;
 }
 
 .playlist-stats span:first-of-type {
   font-weight: 1000;
-  font-family: 'Futura PT', sans-serif;
+  font-family: "Futura PT", sans-serif;
 }
 
-.playlist-stats  img{
+.playlist-stats img {
   position: relative;
   top: 6px;
 }
 
 .playlist-stats span:first-of-type {
   font-weight: 1000;
-  font-family: 'Futura PT', sans-serif;
+  font-family: "Futura PT", sans-serif;
 }
 
-.footer-player  {
+.footer-player {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #181818;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   width: 100%;
   height: var(--footer-height);
 }
@@ -562,12 +626,13 @@ footer {
   flex-direction: column;
 }
 
-.footer-player-middle-buttons img  {
+.footer-player-middle-buttons img {
   width: 15px;
   padding: 15px;
 }
 
-.footer-player-middle-buttons, .footer-player-middle-slider {
+.footer-player-middle-buttons,
+.footer-player-middle-slider {
   display: flex;
   justify-content: center;
 }
@@ -577,15 +642,11 @@ footer {
   padding: 20px;
   justify-content: center;
   background: #2d2a40;
-  background: linear-gradient
-  (180deg, #2d2a40 0%, #2d2a40 22%, #2d2a40 100%);
+  background: linear-gradient (180deg, #2d2a40 0%, #2d2a40 22%, #2d2a40 100%);
 }
-
 
 .spotify-playlists {
   padding: 20px 40px;
-
-
 }
 .spotify-playlists h2 {
   color: #ffffff;
@@ -608,9 +669,7 @@ footer {
   transition: all ease 0.4s;
 }
 .spotify-playlists .list .item:hover {
-  background-color: rgb(209,215,224);
-
-
+  background-color: rgb(209, 215, 224);
 }
 .spotify-playlists .list .item img {
   width: 100%;
@@ -652,7 +711,6 @@ footer {
   text-overflow: ellipsis;
 }
 
-
 .spotify-playlists .list .item p {
   color: #989898;
   font-size: 12px;
@@ -663,8 +721,6 @@ footer {
   margin: 70px 0px 0px;
   border-color: #636363;
 }
-
-
 
 /*Pop Artists HTML*/
 
@@ -688,11 +744,11 @@ footer {
 
 /*Artist Info Section*/
 
-#artist-info{
+#artist-info {
   display: flex;
   height: 90vh;
-  background: #2D283E;
-  font-family: 'Futura PT', sans-serif;
+  background: #2d283e;
+  font-family: "Futura PT", sans-serif;
   position: fixed;
 }
 
@@ -700,7 +756,7 @@ footer {
   display: flex;
 }
 
-.artist-profile-container{
+.artist-profile-container {
   display: flex;
 }
 
@@ -741,7 +797,7 @@ footer {
 .album-details-container {
   justify-content: center;
   align-items: center;
-  background-color: #D1D7E0;
+  background-color: #d1d7e0;
   height: 35vh;
   width: 30vh;
   border-radius: 20px;
@@ -803,7 +859,7 @@ footer {
   opacity: 0;
   transition: opacity 300ms;
   color: white;
-  font-family: 'Futura PT', sans-serif;
+  font-family: "Futura PT", sans-serif;
 }
 
 #overlay:target,
@@ -819,7 +875,7 @@ footer {
   position: absolute;
   display: flex;
   position: fixed;
-  background: #2D283E;
+  background: #2d283e;
   justify-content: center;
   align-items: center;
   gap: 3.5rem;
@@ -846,7 +902,7 @@ footer {
 }
 
 .back-popup:hover {
-  cursor: pointer;  
+  cursor: pointer;
   border-radius: 1.5rem;
   box-shadow: 0px 0px 10px white;
   transition: all 300ms ease;
@@ -889,7 +945,7 @@ footer {
 .title,
 .time {
   display: flex;
-  justify-content: left; 
+  justify-content: left;
   align-items: center;
   font-size: 15px;
 }
@@ -903,30 +959,29 @@ footer {
   border: none;
   height: 2rem;
   width: 4.5rem;
-  background: #802BB1;
+  background: #802bb1;
   border-radius: 1rem;
   font-weight: bold;
-  font-family: 'Futura PT', sans-serif;
+  font-family: "Futura PT", sans-serif;
 }
 
 .btn:hover {
-  border-color: #802BB1;
+  border-color: #802bb1;
   background: none;
-  color: #802BB1;
+  color: #802bb1;
   transition: all 300ms ease;
   font-weight: bold;
 }
-
 
 /*Song List Section*/
 
 #songs-list-container {
   display: flex;
-  background-color: #4C495D;
+  background-color: #4c495d;
   color: white;
   justify-content: center;
   height: 110vh;
-  font-family: 'Futura PT', sans-serif;
+  font-family: "Futura PT", sans-serif;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
   position: absolute;
@@ -941,7 +996,7 @@ footer {
   display: flex;
   gap: 11rem;
   margin-top: 1.5rem;
-  background-color: #D1D7E0;
+  background-color: #d1d7e0;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -950,7 +1005,7 @@ footer {
 }
 
 .song-container:hover {
-  background-color: #802BB1;
+  background-color: #802bb1;
   color: white;
   box-shadow: 0px 0px 10px black;
   transition: all 300ms ease;
@@ -976,7 +1031,7 @@ footer {
 .song-btn {
   display: flex;
   height: 2rem;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 .song-btn:hover {
@@ -986,7 +1041,3 @@ footer {
   box-shadow: 0px 0px 20px white;
   transition: all 300ms ease;
 }
-
-
-
-
