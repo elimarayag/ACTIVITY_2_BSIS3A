@@ -1,22 +1,5 @@
 /* style.css */
-body {
-  background-image: url('./assets/body.jpg');
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  animation: backgroundSlide 20s linear infinite;
-}
-
-@keyframes backgroundSlide {
-  0% {
-      background-position: 0% 0%;
-  }
-  100% {
-      background-position: 100% 0%;
-  }
-
-}
-
+body 
 html {
     scroll-behavior: smooth;
 }
