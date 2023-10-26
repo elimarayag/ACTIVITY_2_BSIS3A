@@ -483,6 +483,8 @@ footer {
   left: 0px;
 }
 
+
+
 .current-song-cover img {
   position: absolute;
   width: 100%;
@@ -490,16 +492,20 @@ footer {
   left: 0;
 }
 
+
 .container {
   display: flex;
   flex-direction: row;
   height: calc(100vh - var(--footer-height)) !important;
 }
 
+
 .right {
   width: 100%;
-  background-color: #1c1b25;
+  background-image: url("/assets/pop.png");
+  
 }
+
 
 .arrow-container {
   border-radius: 50%;
@@ -511,41 +517,40 @@ footer {
   align-items: center;
 }
 
-.playlist-arrows {
+.playlist-arrows  {
   display: flex;
   align-items: center;
+  
 }
 
 .arrow-container {
   margin-right: 15px !important;
+  
 }
 
 .playlist-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .playlist-header {
   padding: 20px;
+  height: 60vh;
+  
+
 }
 
-.playlist-top-email {
-  display: flex;
-  align-items: center;
-  background-color: #434343;
-  border-radius: 20px;
-  color: white;
-}
+
+
 
 .playlist-header .arrow-container {
   background-color: #535353;
   margin: 2px;
 }
 
-.playlist-top-email span {
-  padding: 0 10px;
-}
+
 
 .playlist-content {
   display: flex;
@@ -554,8 +559,10 @@ footer {
   margin-top: 20px;
 }
 
+
+
 .playlist-info {
-  color: white;
+  color:white;
   padding-left: 20px;
   align-items: center;
 }
@@ -563,46 +570,46 @@ footer {
 .playlist-title {
   font-size: 86px;
   font-weight: 700;
-
+  
   margin-top: 10px;
-  font-family: "Futura PT", sans-serif;
+  font-family: 'Futura PT', sans-serif;
 }
 
 .playlist-description {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 400;
   margin-top: 20px;
-  color: #b5b5b5;
+  color:#B5B5B5;
 }
 
-.playlist-stats img {
+.playlist-stats  img{
   position: relative;
   top: 6px;
 }
 
 .playlist-stats span:first-of-type {
   font-weight: 1000;
-  font-family: "Futura PT", sans-serif;
+  font-family: 'Futura PT', sans-serif;
 }
 
-.playlist-stats img {
+.playlist-stats  img{
   position: relative;
   top: 6px;
 }
 
 .playlist-stats span:first-of-type {
   font-weight: 1000;
-  font-family: "Futura PT", sans-serif;
+  font-family: 'Futura PT', sans-serif;
 }
 
-.footer-player {
+.footer-player  {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #181818;
   position: absolute;
-  bottom: 0;
+  bottom:0;
   width: 100%;
   height: var(--footer-height);
 }
@@ -626,13 +633,12 @@ footer {
   flex-direction: column;
 }
 
-.footer-player-middle-buttons img {
+.footer-player-middle-buttons img  {
   width: 15px;
   padding: 15px;
 }
 
-.footer-player-middle-buttons,
-.footer-player-middle-slider {
+.footer-player-middle-buttons, .footer-player-middle-slider {
   display: flex;
   justify-content: center;
 }
@@ -642,15 +648,19 @@ footer {
   padding: 20px;
   justify-content: center;
   background: #2d2a40;
-  background: linear-gradient (180deg, #2d2a40 0%, #2d2a40 22%, #2d2a40 100%);
+  background: linear-gradient
+  (180deg, #2d2a40 0%, #2d2a40 22%, #2d2a40 100%);
 }
+
 
 .spotify-playlists {
   padding: 20px 40px;
+
+
 }
 .spotify-playlists h2 {
   color: #ffffff;
-  font-size: 22px;
+  font-size: 25px;
   margin-bottom: 100px;
 }
 .spotify-playlists .list {
@@ -669,7 +679,9 @@ footer {
   transition: all ease 0.4s;
 }
 .spotify-playlists .list .item:hover {
-  background-color: rgb(209, 215, 224);
+  background-color: rgb(209,215,224);
+
+
 }
 .spotify-playlists .list .item img {
   width: 100%;
@@ -710,6 +722,7 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 
 .spotify-playlists .list .item p {
   color: #989898;
