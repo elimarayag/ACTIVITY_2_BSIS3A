@@ -503,7 +503,7 @@ footer {
 .right {
   width: 100%;
   background-image: url("/assets/pop.png");
-  
+  font-family: 'Futura PT';
 }
 
 
@@ -646,6 +646,7 @@ footer {
 .playlist-songs-container {
   height: 800px;
   padding: 20px;
+  font-family: 'Futura PT';
   justify-content: center;
   background: #2d2a40;
   background: linear-gradient
