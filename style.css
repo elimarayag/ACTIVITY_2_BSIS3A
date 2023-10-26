@@ -611,26 +611,6 @@ footer {
   color: white;
 }
 
-.playlist-stats img {
-  position: relative;
-  top: 6px;
-}
-
-.playlist-stats span:first-of-type {
-  font-weight: 1000;
-  font-family: "Futura PT", sans-serif;
-}
-
-.playlist-stats img {
-  position: relative;
-  top: 6px;
-}
-
-.playlist-stats span:first-of-type {
-  font-weight: 1000;
-  font-family: "Futura PT", sans-serif;
-}
-
 .footer-player {
   display: flex;
   justify-content: space-between;
@@ -643,38 +623,8 @@ footer {
   height: var(--footer-height);
 }
 
-.footer-player-left-like svg path {
-  fill: var(--spotify-green);
-}
-.footer-player-left-like {
-  padding-left: 30px;
-}
-
-.footer-player-left {
-  display: flex;
-  align-items: center;
-}
-
-.footer-player-middle {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.footer-player-middle-buttons img {
-  width: 15px;
-  padding: 15px;
-}
-
-.footer-player-middle-buttons,
-.footer-player-middle-slider {
-  display: flex;
-  justify-content: center;
-}
-
 .playlist-songs-container {
-  height: 800px;
+  height: 400px;
   padding: 20px;
   font-family: "Futura PT";
   justify-content: center;
@@ -708,6 +658,7 @@ footer {
 .spotify-playlists .list .item:hover {
   background-color: rgb(209, 215, 224);
 }
+
 .spotify-playlists .list .item img {
   width: 100%;
   border-radius: 6px;
