@@ -500,7 +500,21 @@ footer {
 }
 
 
-.right {
+.pop-header {
+  width: 100%;
+  background-image: url("/assets/pop.png");
+  font-family: 'Futura PT';
+  text-shadow: 0px 0px 10px black;
+}
+
+.rock-header {
+  width: 100%;
+  background-image: url("/assets/rock.png");
+  font-family: 'Futura PT';
+  text-shadow: 0px 0px 10px black;
+}
+
+.rnb-header {
   width: 100%;
   background-image: url("/assets/rnb.png");
   font-family: 'Futura PT';
