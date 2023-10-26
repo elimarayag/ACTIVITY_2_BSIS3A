@@ -4,6 +4,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  font-family: 'Futura PT', sans-serif; 
   animation: backgroundSlide 20s linear infinite;
 }
 
@@ -48,10 +49,15 @@ nav {
 
 a {
   color: rgb(209, 215, 224);
-  text-shadow: 0px 0px 20px rgb(255, 255, 255);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
   text-decoration: none;
   text-decoration-color: white;
-  font-size: 1.5rem;
+  transition: all 300ms ease-in-out;
 }
 
 a:hover {
@@ -158,20 +164,27 @@ a:hover {
 
 /*home section*/
 #home-section {
-  padding: 100px 0;
+  padding: 80px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
+  margin: 0;
+  background-image: url(./assets/home.jpg);
+  background-position: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
 }
 
 .home-content {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
+  width: 100%;
+  height: 91.5%;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
   flex-direction: row-reverse; /* Reverses the order of the items */
 }
 
@@ -181,26 +194,34 @@ a:hover {
   order: 2;
   display: flex;
   height: 300px;
-  width: 300px;
+  width: 300  px;
   margin: auto 0;
+}
+
+.home-photo {
+  border-radius: 20px;
 }
 
 .description {
   flex: 1;
   padding: 20px;
   order: 1;
-  text-align: left;
+  text-align: center;
+  margin-top: 7rem;
 }
 
 .description h1 {
-  font-size: 2rem;
+  font-size: 5rem;
+  margin: 0;
   color: rgb(128, 43, 177);
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
 .description p {
   padding-left: 5px;
   font-size: 1.2rem;
-  color: #333;
+  color: white;
+  text-shadow: 0px 0px 10px black;
 }
 
 /* section genre */
