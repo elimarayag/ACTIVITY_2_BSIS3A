@@ -529,23 +529,29 @@ footer {
 
 .pop-header {
   width: 100%;
-  background-image: url("/assets/pop.png");
+  background-image: url("/assets/genre-1.png");
   font-family: "Futura PT";
   text-shadow: 0px 0px 10px black;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .rock-header {
   width: 100%;
-  background-image: url("/assets/rock.png");
+  background-image: url("/assets/genre-3.png");
   font-family: "Futura PT";
   text-shadow: 0px 0px 10px black;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .rnb-header {
   width: 100%;
-  background-image: url("/assets/rnb.png");
+  background-image: url("/assets/genre-2.png");
   font-family: "Futura PT";
   text-shadow: 0px 0px 10px black;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .arrow-container {
@@ -611,20 +617,8 @@ footer {
   color: white;
 }
 
-.footer-player {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #181818;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: var(--footer-height);
-}
-
 .playlist-songs-container {
-  height: 400px;
+  height: 100%;
   padding: 20px;
   font-family: "Futura PT";
   justify-content: center;
@@ -634,6 +628,7 @@ footer {
 
 .spotify-playlists {
   padding: 20px 40px;
+  padding-bottom: 0;
 }
 .spotify-playlists h2 {
   color: #ffffff;
