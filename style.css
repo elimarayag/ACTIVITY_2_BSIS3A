@@ -341,7 +341,8 @@ footer {
 
 .right {
   width: 100%;
-  background-color:#1c1b25
+  background-color:#1c1b25;
+  
 }
 
 
@@ -370,10 +371,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .playlist-header {
-  padding: 20px
+  padding: 20px;
+  height: 60vh;
   
 
 }
