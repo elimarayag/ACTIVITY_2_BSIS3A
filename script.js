@@ -30,3 +30,16 @@ function nextSlide() {
 }
 
 showSlide(currentSlide);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const submitButton = document.getElementById("submit-button");
+    const thankYouMessage = document.getElementById("thank-you-message");
+  
+    submitButton.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+  
+      // Hide the form and display the thank you message
+      document.querySelector("form").style.display = "none";
+      thankYouMessage.style.display = "block";
+    });
+});
