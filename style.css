@@ -261,6 +261,7 @@ a:hover {
   width: 90%;
   height: 80%;
   margin-top: 5px;
+  border-radius: 20px;
 }
 
 .genre-slide .genre-description {
