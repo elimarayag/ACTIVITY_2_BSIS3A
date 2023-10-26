@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 600px) {
   #home-section {
-    background-size: cover  ;
+    background-size: cover;
     padding: 10px;
   }
 
@@ -105,23 +105,36 @@
     width: 90px;
   }
 
+  #contact {
+    height: 40vh;
+    margin-top: 5px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5rem;
+  }
+
   .contact-container {
     max-width: 400px;
   }
 
+  .contact-container p {
+    font-size: 1rem;
+  }
+
   .form-group {
-    margin: 5px 0;
+    margin: 1px 0;
   }
 
   input[type="text"],
   input[type="email"],
   textarea {
-    width: 80%;
+    width: 75%;
   }
 
   .github-button {
-    padding: 5px 8px;
-    font-size: 0.9rem;
+    padding: 2px 5px;
+    font-size: 0.5rem;
   }
 
   #desktop-nav {
