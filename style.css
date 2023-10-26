@@ -890,6 +890,7 @@ footer {
   transition: opacity 300ms;
   color: white;
   font-family: "Futura PT", sans-serif;
+  text-shadow: none;
 }
 
 #overlay:target,
