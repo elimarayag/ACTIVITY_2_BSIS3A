@@ -341,7 +341,7 @@ footer {
 
 .right {
   width: 100%;
-  background-color:#1c1b25;
+  background-image: url("/assets/pop.png");
   
 }
 
@@ -381,22 +381,14 @@ footer {
 
 }
 
-.playlist-top-email {
-  display: flex;
-  align-items: center;
-  background-color: #434343;
-  border-radius: 20px;
-  color:white;
-}
+
+
 
 .playlist-header .arrow-container {
   background-color: #535353;
   margin: 2px;
 }
 
-.playlist-top-email span {
-  padding: 0 10px;
-}
 
 
 .playlist-content {
@@ -423,7 +415,7 @@ footer {
 }
 
 .playlist-description {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 400;
   margin-top: 20px;
   color:#B5B5B5;
@@ -507,7 +499,7 @@ footer {
 }
 .spotify-playlists h2 {
   color: #ffffff;
-  font-size: 22px;
+  font-size: 25px;
   margin-bottom: 100px;
 }
 .spotify-playlists .list {
