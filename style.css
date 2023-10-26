@@ -594,6 +594,7 @@ footer {
   flex-direction: row;
   align-items: flex-end;
   margin-top: 20px;
+  margin-bottom: 7.5rem;
 }
 
 .playlist-info {
