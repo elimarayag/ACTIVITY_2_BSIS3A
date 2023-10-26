@@ -150,6 +150,17 @@
     left: auto;
     right: 0;
   }
+  .pop-header {
+    flex-direction: column;
+  }
+
+  .playlist-top {
+    display: none;
+  }
+
+  .playlist-songs-container {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -222,5 +233,9 @@
 
   .title {
     width: 22rem;
+  }
+
+  .playlist-header   {
+    height: 50%;
   }
 }
