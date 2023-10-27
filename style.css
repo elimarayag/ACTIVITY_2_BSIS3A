@@ -181,7 +181,7 @@ a:hover {
   height: 94%;
   padding: 20px;
   background: rgba(255, 255, 255, 0.5);
-  flex-direction: row-reverse; /* Reverses the order of the items */
+  flex-direction: column-reverse; /* Reverses the order of the items */
 }
 
 .photo {

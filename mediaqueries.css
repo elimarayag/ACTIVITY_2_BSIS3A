@@ -66,12 +66,17 @@
   }
 
   .description h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .description p {
-    font-size: 0.7rem;
-    width: 50rem;
+    font-size: 0.5rem;
+    width: 20rem;
+  }
+
+  #title {
+    height: 5vh;
+    margin-top: 10px;
   }
 
   #genre {
@@ -102,6 +107,11 @@
     padding: 10px;
   }
 
+  #about-title {
+    height: 5vh;
+    margin-bottom: 0px;
+  }
+
   .team-members {
     flex-direction: column;
     padding: 1px;
@@ -118,7 +128,7 @@
   }
 
   #contact {
-    height: 40vh;
+    height: 35vh;
     margin-top: 5px;
   }
 
@@ -127,11 +137,13 @@
   }
 
   .contact-container {
-    max-width: 400px;
+    max-width: 250px;
+    padding: 0 0;
+    margin-top: 0;
   }
 
   .contact-container p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .form-group {
@@ -141,7 +153,8 @@
   input[type="text"],
   input[type="email"],
   textarea {
-    width: 75%;
+    width: 80%;
+    height: 1vh;
   }
 
   .github-button {
@@ -154,8 +167,16 @@
   }
 
   #hamburger-nav {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: right;
+    padding: 20 10px;
+  }
+
+  .logo img {
+    width: 70px;
+    height: 70px;
   }
 
   .menu-links {
