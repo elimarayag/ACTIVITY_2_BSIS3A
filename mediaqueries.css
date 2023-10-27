@@ -53,13 +53,12 @@
 
 @media screen and (max-width: 600px) {
   #home-section {
-    background-size: cover;
+    height: 50vh;
     padding: 10px;
   }
 
   .home-content {
-    max-width: 400px;
-    padding: 3px;
+    max-width: 550px;
   }
 
   #genre {
@@ -235,7 +234,7 @@
     width: 22rem;
   }
 
-  .playlist-header   {
+  .playlist-header {
     height: 50%;
   }
 }
