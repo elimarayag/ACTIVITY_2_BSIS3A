@@ -42,6 +42,10 @@
     padding: 0.5px;
   }
 
+  h2 {
+    font-size: 1rem;
+  }
+
   #hamburger-nav {
     text-align: right;
   }
@@ -61,6 +65,15 @@
     max-width: 550px;
   }
 
+  .description h1 {
+    font-size: 2rem;
+  }
+
+  .description p {
+    font-size: 0.7rem;
+    width: 50rem;
+  }
+
   #genre {
     width: 100%;
     padding: 0px;
@@ -75,7 +88,7 @@
   }
 
   .genre-slide .genre-description {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     padding: 0;
     top: 45%;
   }
